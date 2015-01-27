@@ -342,8 +342,8 @@ h1 {
 	font-size: 40px;
 }
 h2 {
-	font-size: 3em;
-	text-transform: uppercase;
+	font-size: 3.6em;
+	letter-spacing: -1px;
 	text-align: center;
 	margin-bottom: 1em;
 }
@@ -468,7 +468,57 @@ h3 {
 	// padding-top: 0;
 // 	padding-bottom: 0;
 	text-align: center;
-	
+	background-color: @brand-primary;
+	color: #fff;
+}
+
+// SHARE 
+// -------------------------------------------------
+
+#share-stuff {
+	.section-inverse;
+	.carousel-inner {
+		position: relative;
+	}
+	.fa {
+		position: absolute;
+		top: 50%;
+		margin-top: -19px;
+		color: #eee;
+		
+	}
+	.carousel-control {
+		font-size: 30px;
+		text-shadow: 0 2px 0 rgba(0,0,0,.3);
+		&.left,
+		&.right {
+			background-image: none;
+			
+		}
+		&.left {
+			left: -10.5%;
+		}
+		&.right {
+			right: -8%;
+		}
+		@media (min-width: @screen-md-min) and (max-width @screen-md-max) {
+			&.left {
+				left: -21%;
+			}
+			&.right {
+				right: -8%;
+			}
+		}
+	}
+	.thumbnail {
+		padding: 0;
+		border: none;
+		.box-shadow(none);
+	}
+	.shareable {
+		.make-xs-column(6);
+		.make-sm-column(3);
+	}
 }
 
 
