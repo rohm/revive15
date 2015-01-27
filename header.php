@@ -22,6 +22,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54c711a64ebf6b10" async="async"></script>
+	
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header container" role="banner">

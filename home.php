@@ -27,8 +27,10 @@ get_header(); ?>
 		</div>
 	</section>
 	<section id="social-buttons">
-		<div>
-			<em>Follow Us</em>
+		<div class="container">
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<em class="tiny-label">Follow us</em> <div class="addthis_horizontal_follow_toolbox"></div>
+			
 		</div>
 
 	</section>
