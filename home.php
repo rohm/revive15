@@ -179,7 +179,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			
+			<a class="btn btn-primary btn-cta btn-lg">Register Now</a>
 		</div>
 	</section>
 	<section id="quotes">    				
@@ -223,23 +223,23 @@ get_header(); ?>
 			<h2>Lodging &amp; Travel</h2>
 
   		<h3>Hotel Information</h3>
-  		<p><a href="http://www.marriott.com/hotelwebsites/us/c/chirs/chirs_pdfs/CHISR%20Directions%20Brown.pdf" target="_blank">Driving Directions &gt;</a></p>
-  		<p><a class="red magra" href="http://www.urbanspoon.com/n/2/12209/Chicago/Schaumburg-restaurants" target="_blank">Area Dining Guide &gt;</a></p>
+  		<p><a href="http://www.marriott.com/hotelwebsites/us/c/chirs/chirs_pdfs/CHISR%20Directions%20Brown.pdf" target="_blank">Driving Directions</a></p>
+  		<p><a class="red magra" href="http://www.urbanspoon.com/n/2/12209/Chicago/Schaumburg-restaurants" target="_blank">Area Dining Guide</a></p>
 
   		<p class="hotel">
   			<strong>Renaissance Schaumburg Hotel</strong><br>
   			1551 N. Thoreau Dr.<br>
   			Schaumburg, Illinois 60173      		
   		</p>
-			<p><a  href="http://www.marriott.com/hotels/travel/chirs-renaissance-schaumburg-convention-center-hotel/?toDate=9/22/13&amp;groupCode=rohroha&amp;fromDate=9/18/13&amp;app=resvlink" target="_blank">Book your room at the Renaissance now with the<br>Revive Our Hearts group rate &gt; </a></p>
+			<p><a  href="http://www.marriott.com/hotels/travel/chirs-renaissance-schaumburg-convention-center-hotel/?toDate=9/22/13&amp;groupCode=rohroha&amp;fromDate=9/18/13&amp;app=resvlink" target="_blank">Book your room at the Renaissance now with the Revive Our Hearts group rate</a></p>
 
   		<p class="hotel">
   		  <strong>Hyatt Place Chicago/Schaumburg</strong><br>
   		  1851 McConnor Parkway<br>
   		  Schaumburg, Illinois 60173
   		</p>
-			<p><a class="red magra" href="http://schaumburg.place.hyatt.com/" target="_blank">Book your room at the Hyatt and use group&nbsp;code&nbsp;G-ROHG &gt; </a>
-      		<span class="info">Or call 877–574–7260 and ask for the Revive&nbsp;Our&nbsp;Hearts&nbsp;group&nbsp;block.</span></p>
+			<p><a class="red magra" href="http://schaumburg.place.hyatt.com/" target="_blank">Book your room at the Hyatt and use group&nbsp;code&nbsp;G-ROHG </a>
+      		<span class="info">or call 877–574–7260 and ask for the Revive&nbsp;Our&nbsp;Hearts&nbsp;group&nbsp;block.</span></p>
   		<p class="hotel">
 	 
       		 <strong>Holiday Inn Express</strong><br>
@@ -251,25 +251,25 @@ get_header(); ?>
 
   		<p><span>Chicago O’Hare Airport (ORD) is thirteen miles from the hotel.</span> Shuttle service is not available.</p>
   		<p>Transportation from the airport is available through</p>
-  		<ul>
-  			<li>1) American Taxi
-  				<ol>
+  		<ol>
+  			<li>American Taxi
+  				<ol type="a">
   					<li>Call: 1-847-255-9614</li>
   					<li>Cost: $35 USD (one way)</li>
   				</ol>
   			</li>
-  			<li>2) Standard Taxi
-  				<ol>
+  			<li>Standard Taxi
+  				<ol type="a">
   					<li>Approximate taxi fare: $65 USD (one way)</li>
   				</ol>
   			</li>
-  		</ul>
+  		</ol>
   	</div>
 	</section>
-	<section id="promote">
+	<!-- <section id="promote">
 		<div class="container">
 			<h2>Promote</h2>
-			
+
 		</div>
 	</section>
 	<section id="exhibitors">
@@ -277,11 +277,11 @@ get_header(); ?>
 			<h2>Exhibitors</h2>
 			<p>Applicake apple pie danish sweet roll halvah tart jelly apple pie brownie. Apple pie toffee macaroon lemon drops. Cookie candy sugar plum cotton candy cookie macaroon cookie dragée. Candy cupcake tart chocolate bar toffee oat cake toffee cake macaroon. Liquorice pastry wafer halvah liquorice bonbon macaroon pastry. Unerdwear.com chocolate caramels dessert tart jujubes. Bear claw jelly carrot cake tart pudding. </p>
 		</div>
-	</section>
+	</section> -->
 	<section id="email-updates">
 		<div class="container">
-			<h2>Stay in Touch</h2>
-			<h3>Get Email Updates</h3>
+			<h2>Stay Informed</h2>
+			<p class="text-center">Get updated on the latest developments yadda yadda yadda.</p>
 			<div class="well">
 				<form action="#">
 	        <div class="input-group">
