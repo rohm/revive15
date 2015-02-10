@@ -14,9 +14,11 @@ get_header(); ?>
 		<div class="container">
 			<h1>Revive &rsquo;15: Women&nbsp;Teaching&nbsp;Women</h1>
 			<blockquote>&ldquo;The Lord gives the word; the women who announce the news are a great host.&rdquo;</blockquote>
-			<a class="btn btn-primary btn-cta btn-lg">Register Now</a>
+			<a class="btn btn-primary btn-cta btn-lg" href="https://www.signupforms.com/registrations/3862">Register Now</a>
+			
 			
 		</div>
+		<h3 class="hashtag">#revive15wtw</h3>
 	</section>
 	<section id="burden">
 		<div class="container">
@@ -154,32 +156,37 @@ get_header(); ?>
 		<div class="container">
 			<div class="pricing">
 				<h2>Registration</h2>
-				<div class="row">
-					<div class="pricing">
-						<div class="price pre-conference-pricing">
-							<h3>Pre-Conference</h3>
-							<big>$59</big>
+				<div class="pricing-table">
+					<div class="row">
+						<div class="pricing">
+							<div class="price pre-conference-pricing">
+								<h3>Pre-Conference</h3>
+								<big>$59</big>
+							</div>
 						</div>
 					</div>
 				</div>
 				<big class="plus">+</big>
 				
-				<h3>Main Conference</h3>
-				<div class="row">
+				
+				<div class="pricing-table">
+					<h3>Main Conference</h3>
+					<div class="row">
 					<div class=" price early-pricing">
 						<big>$109</big>
 						<div>Through June 3, 2015</div>
 					</div>
 					<div class="price-or">
-						<b>OR</b>
+						<b>&mdash; or &mdash;</b>
 					</div>
 					<div class="price regular-pricing">
 						<big>$129</big>
 						<div>Through Sept. 4, 2015</div>
 					</div>
 				</div>
+				</div>
 			</div>
-			<a class="btn btn-primary btn-cta btn-lg">Register Now</a>
+			<a class="btn btn-primary btn-cta btn-lg" href="https://www.signupforms.com/registrations/3862">Register Now</a>
 		</div>
 	</section>
 	<section id="quotes">    				
@@ -285,7 +292,7 @@ get_header(); ?>
 			<div class="well">
 				<form action="#">
 	        <div class="input-group">
-	           <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Your Email" required>
+	           <input class="form-control" name="email" id="email" type="email" placeholder="Your Email" required>
 	           <button class="btn btn-info btn-lg" type="submit">Sign Up</button>
 	        </div>
 	       </form>

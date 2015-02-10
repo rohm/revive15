@@ -11,7 +11,7 @@ get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="content-full-width content-secondary">
 				
 				<?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
 				<header class="entry-header page-header">
