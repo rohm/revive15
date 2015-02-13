@@ -16,8 +16,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Magra:400,700" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Lustria" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Magra:400,700|Merriweather:400,700,700italic,400italic,300,300italic' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 </head>
 

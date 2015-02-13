@@ -13,7 +13,7 @@ get_header(); ?>
 	<section id="hero">
 		<div class="container">
 			<h1>Revive &rsquo;15: Women&nbsp;Teaching&nbsp;Women</h1>
-			<blockquote>&ldquo;The Lord gives the word; the women who announce the news are a great host.&rdquo;</blockquote>
+			<blockquote>&ldquo;The Lord gives the word; the women who announce the news are a great host.&rdquo;</blockquote><cite>&ndash; Psalm 68:11</cite>
 			<a class="btn btn-primary btn-cta btn-lg" href="https://www.signupforms.com/registrations/3862">Register Now</a>
 			
 			
@@ -22,10 +22,10 @@ get_header(); ?>
 	</section>
 	<section id="burden">
 		<div class="container">
-			<div class="embed-responsive embed-responsive-16by9">
+			<!-- <div class="embed-responsive embed-responsive-16by9">
 				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/f5rSODpF8uY?rel=0" allowfullscreen=""></iframe>
-			</div>
-			<p class="lead">Our burden is to motivate and equip women to study the Word and teach it to other women--whether in one-on-one discipleship, small groups, larger studies, counseling, etc.</p>
+			</div> -->
+			<p class="lead">Do you wish you knew how to more effectively study God's Word and teach it to women? If so, Revive '15 is just what you’re looking for. Get motivated, encouraged, and equipped!</p>
 		</div>
 	</section>
 	<section id="social-buttons">
@@ -83,19 +83,16 @@ get_header(); ?>
 				<div class="col-sm-4 speaker speaker-main">
 					<img src="/wp-content/uploads/2015/01/speaker-nancy.jpg" alt="Nancy Leigh DeMoss" class="img-circle img-responsive" />
 					<h3>Nancy Leigh DeMoss</h3>
-					<p>Author, Speaker, Plumber</p>
 					<p><a href="http://twitter.com/nancydemoss">@nancydemoss</a></p>
 				</div>
 				<div class="col-sm-4 speaker speaker-main">
 					<img src="/wp-content/uploads/2015/01/speaker-jen.jpg" alt="Jen Wilkin" class="img-circle img-responsive" />
 					<h3>Jen Wilkin</h3>
-					<p>Author, Speaker, Plumber</p>
 					<p><a href="http://twitter.com/jenwilkin">@jenwilkin</a></p>
 				</div>
 				<div class="col-sm-4 speaker speaker-main">
 					<img src="/wp-content/uploads/2015/01/speaker-lauren.jpg" alt="Lauren Chandler" class="img-circle img-responsive" />
 					<h3>Lauren Chandler</h3>
-					<p>Worship Leader</p>
 					<p><a href="http://twitter.com/laurenchandler">@laurenchandler</a></p>
 				</div>
 			</div>
@@ -103,13 +100,11 @@ get_header(); ?>
 				<div class="col-sm-3 col-sm-offset-3 speaker speaker-breakout">
 					<img src="/wp-content/uploads/2015/01/speaker-scott.jpg" alt="Scott Lindsey" class="img-circle img-responsive" />
 					<h3>Scott Lindsey</h3>
-					<p>Logos Expert</p>
 					<p><a href="http://twitter.com/scottlindsey">@scottlindsey</a></p>
 				</div>
 				<div class="col-sm-3 speaker speaker-breakout">
 					<img src="/wp-content/uploads/2015/01/speaker-leslie.jpg" alt="Leslie Bennett" class="img-circle img-responsive" />
 					<h3>Leslie Bennett</h3>
-					<p>ROH Ambassador</p>
 					<p><a href="http://twitter.com/lesliebennett">@lesliebennett</a></p>
 				</div>
 				<div class="col-sm-3"></div>
@@ -149,7 +144,7 @@ get_header(); ?>
 			</div>
 
 
-			<p class="more-info"><a class="btn btn-default btn-lg" href="breakout-sessions.html#session-descriptions">See Detailed Schedule</a></p>
+			<p class="more-info"><a class="btn btn-default btn-lg" href="/schedule/">See Detailed Schedule</a></p>
 		</div>
 	</section>
 	<section id="register">
@@ -174,14 +169,14 @@ get_header(); ?>
 					<div class="row">
 					<div class=" price early-pricing">
 						<big>$109</big>
-						<div>Through June 3, 2015</div>
+						<div>Through June 30, 2015</div>
 					</div>
 					<div class="price-or">
 						<b>&mdash; or &mdash;</b>
 					</div>
 					<div class="price regular-pricing">
-						<big>$129</big>
-						<div>Through Sept. 4, 2015</div>
+						<big>$139</big>
+						<div>Through Sept. 24, 2015</div>
 					</div>
 				</div>
 				</div>
@@ -205,19 +200,29 @@ get_header(); ?>
 					  <div class="carousel-inner">
 					    <div class="active item">
 					    	<blockquote>
-					    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+					    		<p>&ldquo;It pushed a friend and me to start a community Bible study.&rdquo;</p>
 					    	</blockquote>
 					    </div>
 					    <div class="item">
 					    	<blockquote>
-					    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+					    		<p>&ldquo;I came tired, burdened, and ready to quit. I left refreshed and encouraged.&rdquo;</p>
 					    	</blockquote>
 					    </div>
 					    <div class="item">
 					    	<blockquote>
-					    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+					    		<p>&ldquo;I felt like someone put their arm around me and said, &lsquo;Come sit with me. I can teach you some things. We can grow together.&rsquo;&rdquo;</p>
 					    	</blockquote>
 					    	<!-- <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div> -->
+					    </div>
+					    <div class="item">
+					    	<blockquote>
+					    		<p>&ldquo;I now have a greater vision for women&rsquo;s ministry and for my role in it.&rdquo;</p>
+					    	</blockquote>
+					    </div>
+					    <div class="item">
+					    	<blockquote>
+					    		<p>&ldquo;Taking over women&rsquo;s ministry leadership sounded blah if it was just implementing an old program. But I came away from the conference spiritually refreshed, with fresh perspective, ideas, and direction.&rdquo; </p>
+					    	</blockquote>
 					    </div>
 					  </div>
 					</div>
@@ -229,48 +234,34 @@ get_header(); ?>
 		<div class="container">
 			<h2>Lodging &amp; Travel</h2>
 
-  		<h3>Hotel Information</h3>
-  		<p><a href="http://www.marriott.com/hotelwebsites/us/c/chirs/chirs_pdfs/CHISR%20Directions%20Brown.pdf" target="_blank">Driving Directions</a></p>
-  		<p><a class="red magra" href="http://www.urbanspoon.com/n/2/12209/Chicago/Schaumburg-restaurants" target="_blank">Area Dining Guide</a></p>
 
-  		<p class="hotel">
-  			<strong>Renaissance Schaumburg Hotel</strong><br>
-  			1551 N. Thoreau Dr.<br>
-  			Schaumburg, Illinois 60173      		
-  		</p>
-			<p><a  href="http://www.marriott.com/hotels/travel/chirs-renaissance-schaumburg-convention-center-hotel/?toDate=9/22/13&amp;groupCode=rohroha&amp;fromDate=9/18/13&amp;app=resvlink" target="_blank">Book your room at the Renaissance now with the Revive Our Hearts group rate</a></p>
+			<h3>Revive ’15 will be held at the <a href="http://www.icclos.com/">Indiana Convention Center</a>:</h3>
+			<address>100 South Capitol Ave.<br>
+						Indianapolis, IN 46225</address>
 
-  		<p class="hotel">
-  		  <strong>Hyatt Place Chicago/Schaumburg</strong><br>
-  		  1851 McConnor Parkway<br>
-  		  Schaumburg, Illinois 60173
-  		</p>
-			<p><a class="red magra" href="http://schaumburg.place.hyatt.com/" target="_blank">Book your room at the Hyatt and use group&nbsp;code&nbsp;G-ROHG </a>
-      		<span class="info">or call 877–574–7260 and ask for the Revive&nbsp;Our&nbsp;Hearts&nbsp;group&nbsp;block.</span></p>
-  		<p class="hotel">
-	 
-      		 <strong>Holiday Inn Express</strong><br>
-      		 3477 Algonquin Rd<br>
-      		 Rolling Meadows, Illinois 60008
-      		 <span class="info">Book your room by calling 847–259–6600<br>or&nbsp;1–800–HOLIDAY and ask for the Revive&nbsp;Our&nbsp;Hearts&nbsp;group&nbsp;block.</span>
-    	  </p>
+			<p>Here&rsquo;s a <a href="http://www.icclos.com/pdf/ICCLOSMap100711.pdf">map of the inside of the convention center <i class="fa fa-map-marker"></i></a>.</p>
+
+			<h3><i class="fa fa-bed"></i> Hotels</h3>
+			<p>One of the great things about the Indiana Convention Center is the enclosed walkway. We&rsquo;ve secured special rates for you at the Westin, Hyatt, Marriott, and Hilton. Hotel registration will open March 1.</p>
 
 
-  		<p><span>Chicago O’Hare Airport (ORD) is thirteen miles from the hotel.</span> Shuttle service is not available.</p>
-  		<p>Transportation from the airport is available through</p>
-  		<ol>
-  			<li>American Taxi
-  				<ol type="a">
-  					<li>Call: 1-847-255-9614</li>
-  					<li>Cost: $35 USD (one way)</li>
-  				</ol>
-  			</li>
-  			<li>Standard Taxi
-  				<ol type="a">
-  					<li>Approximate taxi fare: $65 USD (one way)</li>
-  				</ol>
-  			</li>
-  		</ol>
+			<h3>Travel</h3>
+			
+			<p>Here&rsquo;s what you need to know about getting to and around downtown Indianapolis:</p>
+			<h4><i class="fa fa-plane"></i> Flying to Indy</h4>
+			<p>If you’re flying to Indianapolis, the airport is approximately fifteen miles from downtown. Not all the hotels provide a shuttle service to and from the airport, so you’ll want to check your hotel. If they don’t have a shuttle, click here for other <a href="http://www.icclos.com/attendees/getting-around-transportation.aspx">transportation options</a>.</p>
+			<h4><i class="fa fa-car"></i> Driving to Indy</h4>
+			<p>If you’re driving to Indianapolis, here are some helpful <a href="http://www.icclos.com/attendees/getting-around-transportation.aspx">directions</a>. Also, here&rsquo;s a <a href="http://www.icclos.com/pdf/DTParkingMap.pdf">Downtown Parking Map <i class="fa fa-map-marker"></i></a>.</p>
+
+
+			<h3><i class="fa fa-cutlery"></i> Eating in Indy</h3>
+			<p>There are a lot of yummy restaurants within walking distance of the Convention Center. Check them out with this <a href="http://www.icclos.com/pdf/DTRestaurantsMap.pdf">downtown restaurant map <i class="fa fa-map-marker"></i></a>.</p>
+
+
+			<h3><i class="fa fa-binoculars"></i> Sightseeing in Indy</h3>
+			<p>Here&rsquo;s the official <a href="http://www.visitindy.com/">tourism site</a> for Indy in case you want to come early or extend your stay after the conference.</p>
+
+
   	</div>
 	</section>
 	<!-- <section id="promote">
@@ -285,7 +276,7 @@ get_header(); ?>
 			<p>Applicake apple pie danish sweet roll halvah tart jelly apple pie brownie. Apple pie toffee macaroon lemon drops. Cookie candy sugar plum cotton candy cookie macaroon cookie dragée. Candy cupcake tart chocolate bar toffee oat cake toffee cake macaroon. Liquorice pastry wafer halvah liquorice bonbon macaroon pastry. Unerdwear.com chocolate caramels dessert tart jujubes. Bear claw jelly carrot cake tart pudding. </p>
 		</div>
 	</section> -->
-	<section id="email-updates">
+	<!-- <section id="email-updates">
 		<div class="container">
 			<h2>Stay Informed</h2>
 			<p class="text-center">Get updated on the latest developments yadda yadda yadda.</p>
@@ -298,7 +289,7 @@ get_header(); ?>
 	       </form>
 			 </div>
 		</div>
-	</section>
+	</section> -->
 </div><!-- #primary -->
 
 	
