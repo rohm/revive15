@@ -38,46 +38,7 @@ get_header(); ?>
 		</div>
 
 	</section>
-	<section id="share-stuff">
-		<h2>Share</h2>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-          <div id="Carousel" class="carousel slide">
-
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-          
-	          <div class="item active">
-	          	<div class="row">
-	          	  <div class="shareable">
-									<a href="#" class="thumbnail"><img src="http://scontent-b.cdninstagram.com/hphotos-xaf1/t51.2885-15/10865188_321548591389730_615085406_n.jpg" alt="Image" style="max-width:100%;"></a>
-								
-								</div>
-	          	  <div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-h.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10903570_772098756215919_138709415_n.jpg" alt="Image" style="max-width:100%;"></a></div>
-	          	  <div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-d.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10903168_1398387683792411_1567105304_n.jpg" alt="Image" style="max-width:100%;"></a></div>
-	          	  <div class="shareable"><a href="#" class="thumbnail"><img src="http://scontent-b.cdninstagram.com/hphotos-xaf1/t51.2885-15/10903761_1571188523127376_1943313390_n.jpg" alt="Image" style="max-width:100%;"></a></div>
-	          	</div><!--.row-->
-	          </div><!--.item-->
-       
-	          <div class="item">
-	          	<div class="row">
-	          		<div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-b.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10860138_1527489310858897_1809474983_n.jpg" alt="Image" style="max-width:100%;"></a></div>
-	          		<div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-g.ak.instagram.com/hphotos-ak-xfa1/t51.2885-15/10853069_1578555669040222_2007227457_n.jpg" alt="Image" style="max-width:100%;"></a></div>
-	          		<div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-g.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10844085_416212125193846_1927958808_n.jpg" alt="Image" style="max-width:100%;"></a></div>
-	          		<div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-a.ak.instagram.com/hphotos-ak-xpa1/t51.2885-15/925054_1508872212714552_528519923_n.jpg" alt="Image" style="max-width:100%;"></a></div>
-	          	</div><!--.row-->
-	          </div><!--.item-->
-       
-       
-          </div><!--.carousel-inner-->
-            <a data-slide="prev" href="#Carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-            <a data-slide="next" href="#Carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
-          </div><!--.Carousel-->
-				</div>
-			</div>
-		</div><!--.container-->
-	</section>
+	
 	<section id="speakers">
 		<div class="container">
 			<h2>Speakers</h2>
@@ -95,6 +56,24 @@ get_header(); ?>
 				<div class="col-sm-4 speaker speaker-main">
 					<img src="/wp-content/uploads/2015/01/speaker-lauren.jpg" alt="Lauren Chandler" class="img-circle img-responsive" />
 					<h3>Lauren Chandler</h3>
+					<p><a href="http://twitter.com/laurenchandler">@laurenchandler</a></p>
+				</div>
+			</div>
+			<h3>Secondary Speakers</h3>
+			<div class="row">
+				<div class="col-sm-3 speaker speaker-main">
+					<img src="/wp-content/uploads/2015/01/speaker-cooks.jpg" alt="Nancy Leigh DeMoss" class="img-circle img-responsive" />
+					<h3>Steve &amp; Vicki Cook</h3>
+					<p><a href="http://twitter.com/nancydemoss">@nancydemoss</a></p>
+				</div>
+				<div class="col-sm-3 speaker speaker-main">
+					<img src="/wp-content/uploads/2015/01/speaker-jen.jpg" alt="Jen Wilkin" class="img-circle img-responsive" />
+					<h3>Trillia Newbell</h3>
+					<p><a href="http://twitter.com/jenwilkin">@jenwilkin</a></p>
+				</div>
+				<div class="col-sm-3 speaker speaker-main">
+					<img src="/wp-content/uploads/2015/01/speaker-lauren.jpg" alt="Lauren Chandler" class="img-circle img-responsive" />
+					<h3>Lore Ferguson</h3>
 					<p><a href="http://twitter.com/laurenchandler">@laurenchandler</a></p>
 				</div>
 			</div>
@@ -196,12 +175,52 @@ get_header(); ?>
 			<a class="btn btn-primary btn-cta btn-lg" href="https://www.signupforms.com/registrations/3862">Register Now</a>
 		</div>
 	</section>
+	<!-- <section id="share-stuff">
+		<h2>Share</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+          <div id="Carousel" class="carousel slide">
+
+
+          <div class="carousel-inner">
+
+	          <div class="item active">
+	          	<div class="row">
+	          	  <div class="shareable">
+									<a href="#" class="thumbnail"><img src="http://scontent-b.cdninstagram.com/hphotos-xaf1/t51.2885-15/10865188_321548591389730_615085406_n.jpg" alt="Image" style="max-width:100%;"></a>
+
+								</div>
+	          	  <div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-h.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10903570_772098756215919_138709415_n.jpg" alt="Image" style="max-width:100%;"></a></div>
+	          	  <div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-d.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10903168_1398387683792411_1567105304_n.jpg" alt="Image" style="max-width:100%;"></a></div>
+	          	  <div class="shareable"><a href="#" class="thumbnail"><img src="http://scontent-b.cdninstagram.com/hphotos-xaf1/t51.2885-15/10903761_1571188523127376_1943313390_n.jpg" alt="Image" style="max-width:100%;"></a></div>
+	          	</div>
+	          </div>
+
+	          <div class="item">
+	          	<div class="row">
+	          		<div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-b.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10860138_1527489310858897_1809474983_n.jpg" alt="Image" style="max-width:100%;"></a></div>
+	          		<div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-g.ak.instagram.com/hphotos-ak-xfa1/t51.2885-15/10853069_1578555669040222_2007227457_n.jpg" alt="Image" style="max-width:100%;"></a></div>
+	          		<div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-g.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10844085_416212125193846_1927958808_n.jpg" alt="Image" style="max-width:100%;"></a></div>
+	          		<div class="shareable"><a href="#" class="thumbnail"><img src="http://photos-a.ak.instagram.com/hphotos-ak-xpa1/t51.2885-15/925054_1508872212714552_528519923_n.jpg" alt="Image" style="max-width:100%;"></a></div>
+	          	</div>
+	          </div>
+
+
+          </div>
+            <a data-slide="prev" href="#Carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+            <a data-slide="next" href="#Carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+          </div>
+				</div>
+			</div>
+		</div>
+	</section> -->
 	<section id="quotes">    				
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
-					<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="4000">
+					<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="5000">
 					  <!-- Carousel indicators -->
 	          <!-- <ol class="carousel-indicators">
 					    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
