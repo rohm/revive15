@@ -18,7 +18,9 @@ get_header(); ?>
 			
 			
 		</div>
-		<h3 class="hashtag">#revive15wtw</h3>
+		<h3 class="hashtag">#revive15indy</h3>
+		<div id="date_place"><div class="date">September 25-26</div><div class="place">Indianapolis</div></div>
+		
 	</section>
 	<section id="burden">
 		<div class="container">
@@ -96,7 +98,7 @@ get_header(); ?>
 					<p><a href="http://twitter.com/laurenchandler">@laurenchandler</a></p>
 				</div>
 			</div>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-sm-3 col-sm-offset-3 speaker speaker-breakout">
 					<img src="/wp-content/uploads/2015/01/speaker-scott.jpg" alt="Scott Lindsey" class="img-circle img-responsive" />
 					<h3>Scott Lindsey</h3>
@@ -108,7 +110,7 @@ get_header(); ?>
 					<p><a href="http://twitter.com/lesliebennett">@lesliebennett</a></p>
 				</div>
 				<div class="col-sm-3"></div>
-			</div>
+			</div> -->
 		</div><!-- .container -->
 	</section><!-- #speakers -->
 	<section id="schedule">
@@ -117,30 +119,40 @@ get_header(); ?>
 
 			<div class="day" id="friday-schedule" >
 				<h3>Friday, September 25</h3>
-				<p>9:00am - Noon Pre-Conference</p>
+				<p class="time">9:00am - Noon <strong>Pre-Conference</strong></p>
 			
 				<p><b class="label">Choose your track:</b></p>
-				<dl>
-					<dt>Doing something cool</dt>
-					<dd>Lauren Chandler</dd>
-				</dl>
-				<dl>
-					<dt>Doing something cool</dt>
-					<dd>Nancy Leigh DeMoss</dd>
-				</dl>
-				<dl>
-					<dt>Doing something cool</dt>
-					<dd>Scott Lindsey</dd>
-				</dl>
-				<dl>
-					<dt>Doing something cool</dt>
-					<dd>Jane Doe</dd>
-				</dl>
-				<p>2:00pm - 10pm Revive 15 Main Sessions</p>
+				<a class="track track-blue" href="/schedule/#blue">
+					<h4>Blue Track</h4>
+					<h5>Speak to Transform Lives</h5>
+					<p class="speakers">Nancy Leigh DeMoss <span class="amp">&amp;</span> Trillia Newbell</p>
+					<div class="btn btn-bordered">See More</div>
+				</a>
+				<a class="track track-yellow" href="/schedule/#yellow">
+					<h4>Yellow Track</h4>
+					<h5>Worship to Bless the Lord</h5>
+					<p class="speakers">Lauren Chandler, Steve <span class="amp">&amp;</span> Vicki Cook</p>
+					<div class="btn btn-bordered">See More</div>
+				</a>
+				<a class="track track-red" href="/schedule/#red">
+					<h4>Red Track</h4>
+					<h5>Writing—Write to Touch Hearts</h5>
+					<p class="speakers">Lore Ferguson</p>
+					<div class="btn btn-bordered">See More</div>
+				</a>
+				<a class="track track-green" href="/schedule/#green">
+					<h4>Green Track</h4>
+					<h5>Logos &mdash; Study to Discover Pure Gold</h5>
+					<p class="speakers">Logos</p>
+					<div class="btn btn-bordered">See More</div>
+				</a>
+				<p class="time">2:00pm - 10pm Revive 15 <strong>Main Sessions</strong></p>
 			</div>
+			<hr>
 			<div class="day" id="saturday-schedule">
 				<h3>Saturday, September 26</h3>
-				<p>8:30am - 4:00pm Revive &rsquo;15 Main Sessions</p>
+				<p class="time">8:30am - 4:00pm <strong>Revive &rsquo;15 Main Sessions</strong></p>
+				<div class="btn btn-bordered">See More</div>
 			</div>
 
 
