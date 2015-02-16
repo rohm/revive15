@@ -120,39 +120,39 @@ get_header(); ?>
 			<div class="day" id="friday-schedule" >
 				<h3>Friday, September 25</h3>
 				<p class="time">9:00am - Noon <strong>Pre-Conference</strong></p>
-			
-				<p><b class="label">Choose your track:</b></p>
+				<p class="lead">Your voice is necessary for reaching the women in your corner of the world for Christ. That&rsquo;s why we&rsquo;ve designed these tracks—so you might communicate His love and truth to them even more effectively. </p>
+				<h4 class="choose">Choose your track:</h4>
 				<a class="track track-blue" href="/schedule/#blue">
 					<h4>Blue Track</h4>
 					<h5>Speak to Transform Lives</h5>
 					<p class="speakers">Nancy Leigh DeMoss <span class="amp">&amp;</span> Trillia Newbell</p>
-					<div class="btn btn-bordered">See More</div>
+					<div class="btn btn-bordered">Read More</div>
 				</a>
 				<a class="track track-yellow" href="/schedule/#yellow">
 					<h4>Yellow Track</h4>
 					<h5>Worship to Bless the Lord</h5>
 					<p class="speakers">Lauren Chandler, Steve <span class="amp">&amp;</span> Vicki Cook</p>
-					<div class="btn btn-bordered">See More</div>
+					<div class="btn btn-bordered">Read More</div>
 				</a>
 				<a class="track track-red" href="/schedule/#red">
 					<h4>Red Track</h4>
 					<h5>Writing—Write to Touch Hearts</h5>
 					<p class="speakers">Lore Ferguson</p>
-					<div class="btn btn-bordered">See More</div>
+					<div class="btn btn-bordered">Read More</div>
 				</a>
 				<a class="track track-green" href="/schedule/#green">
 					<h4>Green Track</h4>
 					<h5>Logos &mdash; Study to Discover Pure Gold</h5>
 					<p class="speakers">Logos</p>
-					<div class="btn btn-bordered">See More</div>
+					<div class="btn btn-bordered">Read More</div>
 				</a>
-				<p class="time">2:00pm - 10pm Revive 15 <strong>Main Sessions</strong></p>
+				<p class="time">2:00pm - 10pm<strong> Revive &rsquo;15 Main Sessions</strong></p>
 			</div>
 			<hr>
 			<div class="day" id="saturday-schedule">
 				<h3>Saturday, September 26</h3>
 				<p class="time">8:30am - 4:00pm <strong>Revive &rsquo;15 Main Sessions</strong></p>
-				<div class="btn btn-bordered">See More</div>
+				<div class="btn btn-bordered">Read More</div>
 			</div>
 
 

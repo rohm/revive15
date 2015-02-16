@@ -317,10 +317,12 @@
 .home #schedule {
 	.section-inverse;
 	text-align: center;
-	b.label {
+	.choose {
 		color: @brand-primary;
+		font-family: @font-family-secondary;
+		font-style: italic;
 	}
-
+	
 	.day {
 		margin-bottom: @grid-gutter-width;
 		padding: @grid-gutter-width;
@@ -329,6 +331,10 @@
 		font-size: 1.4em;
 		strong {
 			margin-left: 10px;
+			display: block;
+			margin-top: .6em;
+			font-size: 1.3em;
+			font-weight: normal;
 		}
 	}
 	.track {
