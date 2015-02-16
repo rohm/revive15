@@ -279,94 +279,7 @@
 }
 
  
-// ------------------------------------------------- SCHEDULE
 
-// Track Mixin //
-.track(@color) {
-	border-color: @color;
-	h4 { 
-		color: @color;
-	}
-	.speakers {
-		.opacity(.8);
-	}
-	.opacity(.9);
-	.transition(all .3s);
-	
-	.btn {
-		color: @color;
-		border: 1px solid @color;
-		margin-bottom: 1em;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		@media (min-width: @screen-md-min) {
-			.opacity(.7);
-		}
-		.transition(opacity .3s);
-	}
-	&:hover {
-		text-decoration: none;
-		.opacity(1);
-		background: rgba(0,0,0,.1);
-		.btn {
-			.opacity(1);
-		}
-	}
-}
-
-.home #schedule {
-	.section-inverse;
-	text-align: center;
-	.choose {
-		color: @brand-primary;
-		font-family: @font-family-secondary;
-		font-style: italic;
-	}
-	
-	.day {
-		margin-bottom: @grid-gutter-width;
-		padding: @grid-gutter-width;
-	}
-	.time {
-		font-size: 1.4em;
-		strong {
-			margin-left: 10px;
-			display: block;
-			margin-top: .6em;
-			font-size: 1.3em;
-			font-weight: normal;
-		}
-	}
-	.track {
-		display: block;
-		color: white;
-		margin-bottom: 2em;
-		border-radius: 3px;
-		border: 3px solid #000;
-		
-		h4 {
-			font-size: 16px;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-		}
-		h5 {
-			font-size: 24px;
-		}
-		&.track-blue {
-			.track(lighten(@blue, 10%));
-		}
-		&.track-yellow {
-			.track(@yellow);
-		}
-		&.track-red {
-			.track(@red);
-		}
-		&.track-green {
-			.track(@green);
-		}
-	}
-	
-}
 
 // REGISTER 
 // -------------------------------------------------
@@ -375,7 +288,9 @@
 	.section-khaki;
 	text-align: center;
 	border-bottom: 1px dashed #eee;
-	background: url('../images/bg-girl-on-iphone.jpg');
+	background: url('../images/laptop-girl.jpg') no-repeat center center fixed;
+	background-size: cover;
+	
 	h2 {
 		color: white;
 	}

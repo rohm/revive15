@@ -33,6 +33,17 @@
 	background-color: lighten(@khaki, 10%);
 }
 
+.page-inverse {
+	background-color: @brand-secondary;
+	color: @offwhite;
+	h1, h2, h3, h5, p, p.lead, p strong {
+		color: @offwhite;
+	}
+	p.lead {
+		
+	}
+}
+
 //
 // Buttons
 // --------------------------------------------------
@@ -326,13 +337,19 @@
 // Table 
 // -------------------------------------------------
 
+.track-row(@color) {
+	h4 {
+		color: @color;
+	}
+}
 
 .table.table-schedule {
-	background-color: #F9F6F4;
+
 	> tbody, tfoot, thead {
 		> tr {
 			td, th {
-				border-top-color: #EAE0DA;
+				// border-top-color: #EAE0DA;
+				border-top-color: rgba(255,255,255,.1);
 			}
 		}
 	}
@@ -340,26 +357,37 @@
 	th, td  {
 		font-weight: normal;
 		padding: 30px;
+		font-size: 1em;
 	}
 	th {
-		background-color: #DBCAC0;
+		// background-color: #DBCAC0;
+		background-color: lighten(@brand-secondary, 5%);
 		text-align: center;
 		font-size: 1.5em;
 		color: #333;
 	}
 	th {
 		&.speaker, &.description, &.room {
-			background-color: #EAE0DA;
+			// background-color: #EAE0DA;
 			text-align: left;
 			font-size: 1em;
 		}
 	}
+	th, td {
+		&.speaker {
+			width: 24%;
+		}
+	}
 	tr:nth-child(even) td {
-	background-color: #fcfbfb;
+	// background-color: #fcfbfb;
 	}
 	h4 {
-		color: lighten(#331347, 12%) !important;
-		font-size: 16px;
+		color: lighten(#331347, 12%);
+		font-size: 20px;
+		margin: 0;
+	}
+	tr.blue {
+		.track-row(@blue);
 	}
 }
 
@@ -646,6 +674,100 @@ header.page-header {
 }
 
 @import "home.less";
+
+
+// ------------------------------------------------- SCHEDULE
+
+// Track Mixin //
+.track(@color) {
+	border-color: @color;
+	h4 { 
+		color: @color;
+	}
+	.speakers {
+		.opacity(.8);
+	}
+	.opacity(.9);
+	.transition(all .3s);
+	
+	.btn {
+		color: @color;
+		border: 1px solid @color;
+		margin-bottom: 1em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@media (min-width: @screen-md-min) {
+			.opacity(.7);
+		}
+		.transition(opacity .3s);
+	}
+	&:hover {
+		text-decoration: none;
+		.opacity(1);
+		background: rgba(0,0,0,.1);
+		.btn {
+			.opacity(1);
+		}
+	}
+}
+
+#schedule {
+	.section-inverse;
+	text-align: center;
+	.choose {
+		color: @brand-primary;
+		font-family: @font-family-secondary;
+		font-style: italic;
+	}
+	
+	.day {
+		margin-bottom: @grid-gutter-width;
+		padding: @grid-gutter-width;
+	}
+	.time {
+		font-size: 1.4em;
+		strong {
+			margin-left: 10px;
+			display: block;
+			margin-top: .6em;
+			font-size: 1.3em;
+			font-weight: normal;
+		}
+	}
+	.track {
+		display: block;
+		color: white;
+		margin-bottom: 2em;
+		border-radius: 3px;
+		border: 3px solid #000;
+		
+		h4 {
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		h5 {
+			font-size: 24px;
+		}
+		&.track-blue {
+			.track(lighten(@blue, 10%));
+		}
+		&.track-yellow {
+			.track(@yellow);
+		}
+		&.track-red {
+			.track(@red);
+		}
+		&.track-green {
+			.track(@green);
+		}
+	}
+	
+}
+
+.page-schedule {
+	.page-inverse;
+}
 
 // Speaker Bios
 // ----------------------------------------------------

@@ -119,7 +119,7 @@ get_header(); ?>
 
 			<div class="day" id="friday-schedule" >
 				<h3>Friday, September 25</h3>
-				<p class="time">9:00 am – Noon <strong>Pre-Conference</strong></p>
+				<p class="time">9:00am - Noon <strong>Pre-Conference</strong></p>
 				<p class="lead">Your voice is necessary for reaching the women in your corner of the world for Christ. That&rsquo;s why we&rsquo;ve designed these tracks—so you might communicate His love and truth to them even more effectively. </p>
 				<h4 class="choose">Choose your track:</h4>
 				<a class="track track-blue" href="/schedule/#blue">
@@ -146,12 +146,12 @@ get_header(); ?>
 					<p class="speakers">Logos</p>
 					<div class="btn btn-bordered">Read More</div>
 				</a>
-				<p class="time">2:00 pm – 10:00 pm<strong> Revive &rsquo;15 Main Sessions</strong></p>
+				<p class="time">2:00pm - 10pm<strong> Revive &rsquo;15 Main Sessions</strong></p>
 			</div>
 			<hr>
 			<div class="day" id="saturday-schedule">
 				<h3>Saturday, September 26</h3>
-				<p class="time">8:30 am – 4:00 pm <strong>Revive &rsquo;15 Main Sessions</strong></p>
+				<p class="time">8:30am - 4:00pm <strong>Revive &rsquo;15 Main Sessions</strong></p>
 				<div class="btn btn-bordered">Read More</div>
 			</div>
 
@@ -201,7 +201,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
-					<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="4000">
+					<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="8000">
 					  <!-- Carousel indicators -->
 	          <!-- <ol class="carousel-indicators">
 					    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
