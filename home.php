@@ -44,49 +44,59 @@ get_header(); ?>
 			<h2>Speakers</h2>
 			<div class="row">
 				<div class="col-sm-4 speaker speaker-main">
-					<img src="/wp-content/uploads/2015/01/speaker-nancy.jpg" alt="Nancy Leigh DeMoss" class="img-circle img-responsive" />
+					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-nancy.jpg" alt="Nancy Leigh DeMoss" class="img-circle img-responsive" />
 					<h3>Nancy Leigh DeMoss</h3>
-					<p><a href="http://twitter.com/nancydemoss">@nancydemoss</a></p>
+					<p class="role">Plenary Speaker</p>
+					<p class="speaker-url"><a href="http://twitter.com/nancydemoss">@NancyDemoss</a></p>
 				</div>
 				<div class="col-sm-4 speaker speaker-main">
-					<img src="/wp-content/uploads/2015/01/speaker-jen.jpg" alt="Jen Wilkin" class="img-circle img-responsive" />
+					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-jen.jpg" alt="Jen Wilkin" class="img-circle img-responsive" />
 					<h3>Jen Wilkin</h3>
-					<p><a href="http://twitter.com/jenwilkin">@jenwilkin</a></p>
+					<p class="role">Plenary Speaker</p>
+					<p class="speaker-url"><a href="http://twitter.com/jenwilkin">@JenWilkin</a></p>
 				</div>
 				<div class="col-sm-4 speaker speaker-main">
-					<img src="/wp-content/uploads/2015/01/speaker-lauren.jpg" alt="Lauren Chandler" class="img-circle img-responsive" />
+					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-lauren.jpg" alt="Lauren Chandler" class="img-circle img-responsive" />
 					<h3>Lauren Chandler</h3>
-					<p><a href="http://twitter.com/laurenchandler">@laurenchandler</a></p>
+					<p class="role">Worship Leader</p>
+					<p class="speaker-url"><a href="http://twitter.com/laurenchandler">@LaurenChandler</a></p>
 				</div>
 			</div>
-			<h3>Secondary Speakers</h3>
-			<div class="row">
+			
+			<div class="row speakers-secondary">
+				<h3>Track Speakers</h3>
 				<div class="col-sm-3 speaker speaker-main">
-					<img src="/wp-content/uploads/2015/01/speaker-cooks.jpg" alt="Nancy Leigh DeMoss" class="img-circle img-responsive" />
-					<h3>Steve &amp; Vicki Cook</h3>
-					<p><a href="http://twitter.com/nancydemoss">@nancydemoss</a></p>
-				</div>
-				<div class="col-sm-3 speaker speaker-main">
-					<img src="/wp-content/uploads/2015/01/speaker-jen.jpg" alt="Jen Wilkin" class="img-circle img-responsive" />
+					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-trillia.jpg" alt="Trillia Newbell" class="img-circle img-responsive" />
 					<h3>Trillia Newbell</h3>
-					<p><a href="http://twitter.com/jenwilkin">@jenwilkin</a></p>
+					<p class="speaker-url"><a href="http://twitter.com/trillianewbell">@TrilliaNewbell</a></p>
 				</div>
 				<div class="col-sm-3 speaker speaker-main">
-					<img src="/wp-content/uploads/2015/01/speaker-lauren.jpg" alt="Lauren Chandler" class="img-circle img-responsive" />
+					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-cooks.jpg" alt="Steve &amp; Vikki Cook" class="img-circle img-responsive" />
+					<h3>Steve &amp; Vikki Cook</h3>
+					<p class="speaker-url"><a href="http://twitter.com/SovGraceMusic">@SovGraceMusic</a></p>
+				</div>
+				<div class="col-sm-3 speaker speaker-main">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-lore.jpg" alt="Lore Ferguson" class="img-circle img-responsive" />
 					<h3>Lore Ferguson</h3>
-					<p><a href="http://twitter.com/laurenchandler">@laurenchandler</a></p>
+					<p class="speaker-url"><a href="http://twitter.com/loreferguson">@LoreFerguson</a></p>
+				</div>
+				<div class="col-sm-3 speaker speaker-main">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-logos.jpg" alt="Logos" class="img-circle img-responsive" />
+					<h3>Logos</h3>
+					<p class="speaker-url"><a href="http://twitter.com/logos">@Logos</a></p>
 				</div>
 			</div>
+			<a href="/speakers/" class="btn btn-lg btn-default">More Info</a>
 			<!-- <div class="row">
 				<div class="col-sm-3 col-sm-offset-3 speaker speaker-breakout">
 					<img src="/wp-content/uploads/2015/01/speaker-scott.jpg" alt="Scott Lindsey" class="img-circle img-responsive" />
 					<h3>Scott Lindsey</h3>
-					<p><a href="http://twitter.com/scottlindsey">@scottlindsey</a></p>
+					<p class="speaker-url"><a href="http://twitter.com/scottlindsey">@scottlindsey</a></p>
 				</div>
 				<div class="col-sm-3 speaker speaker-breakout">
 					<img src="/wp-content/uploads/2015/01/speaker-leslie.jpg" alt="Leslie Bennett" class="img-circle img-responsive" />
 					<h3>Leslie Bennett</h3>
-					<p><a href="http://twitter.com/lesliebennett">@lesliebennett</a></p>
+					<p class="speaker-url"><a href="http://twitter.com/lesliebennett">@lesliebennett</a></p>
 				</div>
 				<div class="col-sm-3"></div>
 			</div> -->
@@ -99,23 +109,23 @@ get_header(); ?>
 			<div class="day" id="friday-schedule" >
 				<h3>Friday, September 25</h3>
 				<p class="time">9:00 am – Noon <strong>Pre-Conference</strong></p>
-				<p class="lead">Your voice is necessary for reaching the women in your corner of the world for Christ. That&rsquo;s why we&rsquo;ve designed these tracks—so you might communicate His love and truth to them even more effectively. </p>
+				<p class="lead">Your voice is necessary for reaching the women in your corner of the world for Christ. That&rsquo;s why we&rsquo;ve designed these tracks—so you might communicate His love and truth to them even&nbsp;more&nbsp;effectively. </p>
 				<h4 class="choose">Choose your track:</h4>
 				<a class="track track-blue" href="/schedule/#blue">
 					<h4>Blue Track</h4>
-					<h5>Speak to Transform Lives</h5>
+					<h5>Speaking&mdash;Speak to Transform Lives</h5>
 					<p class="speakers">Nancy Leigh DeMoss <span class="amp">&amp;</span> Trillia Newbell</p>
 					<div class="btn btn-bordered">Read More</div>
 				</a>
 				<a class="track track-yellow" href="/schedule/#yellow">
 					<h4>Yellow Track</h4>
-					<h5>Worship to Bless the Lord</h5>
-					<p class="speakers">Lauren Chandler, Steve <span class="amp">&amp;</span> Vicki Cook</p>
+					<h5>Worship&mdash;Worship to Bless the Lord</h5>
+					<p class="speakers">Lauren Chandler, Steve <span class="amp">&amp;</span> Vikki Cook</p>
 					<div class="btn btn-bordered">Read More</div>
 				</a>
 				<a class="track track-red" href="/schedule/#red">
 					<h4>Red Track</h4>
-					<h5>Writing—Write to Touch Hearts</h5>
+					<h5>Writing&mdash;Write to Touch Hearts</h5>
 					<p class="speakers">Lore Ferguson</p>
 					<div class="btn btn-bordered">Read More</div>
 				</a>
@@ -131,7 +141,6 @@ get_header(); ?>
 			<div class="day" id="saturday-schedule">
 				<h3>Saturday, September 26</h3>
 				<p class="time">8:30 am – 4:00 pm <strong>Revive &rsquo;15 Main Sessions</strong></p>
-				<div class="btn btn-bordered">Read More</div>
 			</div>
 
 
@@ -270,7 +279,7 @@ get_header(); ?>
 			<address>100 South Capitol Ave.<br>
 						Indianapolis, IN 46225</address>
 
-			<p>Here&rsquo;s a <a href="http://www.icclos.com/pdf/ICCLOSMap100711.pdf">map of the inside of the convention center <i class="fa fa-map-marker"></i></a>.</p>
+			<p>Here&rsquo;s a <a href="http://www.icclos.com/pdf/ICCLOSMap100711.pdf"><i class="fa fa-map-marker"></i> map of the inside of the convention center</a>.</p>
 
 			<h3><i class="fa fa-bed"></i> Hotels</h3>
 			<p>One of the great things about the Indiana Convention Center is the enclosed walkway. We&rsquo;ve secured special rates for you at the Westin, Hyatt, Marriott, and Hilton. Hotel registration will open March 1.</p>
@@ -282,11 +291,11 @@ get_header(); ?>
 			<h4><i class="fa fa-plane"></i> Flying to Indy</h4>
 			<p>If you’re flying to Indianapolis, the airport is approximately fifteen miles from downtown. Not all the hotels provide a shuttle service to and from the airport, so you’ll want to check your hotel. If they don’t have a shuttle, click here for other <a href="http://www.icclos.com/attendees/getting-around-transportation.aspx">transportation options</a>.</p>
 			<h4><i class="fa fa-car"></i> Driving to Indy</h4>
-			<p>If you’re driving to Indianapolis, here are some helpful <a href="http://www.icclos.com/attendees/getting-around-transportation.aspx">directions</a>. Also, here&rsquo;s a <a href="http://www.icclos.com/pdf/DTParkingMap.pdf">Downtown Parking Map <i class="fa fa-map-marker"></i></a>.</p>
+			<p>If you’re driving to Indianapolis, here are some helpful <a href="http://www.icclos.com/attendees/getting-around-transportation.aspx">directions</a>. Also, here&rsquo;s a <a href="http://www.icclos.com/pdf/DTParkingMap.pdf"><i class="fa fa-map-marker"></i> Downtown Parking Map</a>.</p>
 
 
 			<h3><i class="fa fa-cutlery"></i> Eating in Indy</h3>
-			<p>There are a lot of yummy restaurants within walking distance of the Convention Center. Check them out with this <a href="http://www.icclos.com/pdf/DTRestaurantsMap.pdf">downtown restaurant map <i class="fa fa-map-marker"></i></a>.</p>
+			<p>There are a lot of yummy restaurants within walking distance of the Convention Center. Check them out with this <a href="http://www.icclos.com/pdf/DTRestaurantsMap.pdf"><i class="fa fa-map-marker"></i> downtown restaurant&nbsp;map</a>.</p>
 
 
 			<h3><i class="fa fa-binoculars"></i> Sightseeing in Indy</h3>

@@ -13,7 +13,7 @@
 @khaki:						#D5C2B6;
 @font-family-base: 				'Magra', sans-serif;
 @font-family-secondary:		'Merriweather', Georgia, serif;
-
+@text-color: 			#665F68;
 .section-inverse {
 	background-color: @brand-secondary;
 	color: @offwhite;
@@ -27,10 +27,17 @@
 	.btn {
 		color: white;
 	}
+	.btn-default {
+		border-color: white;
+		&:hover {
+			background: transparent;
+			color: @brand-primary;
+			border-color: @brand-primary;
+		}
+	}
 }
-
 .section-khaki {
-	background-color: lighten(@khaki, 14%);
+	background-color: lighten(@khaki, 10%);
 }
 
 .page-inverse {
@@ -39,9 +46,53 @@
 	h1, h2, h3, h5, p, p.lead, p strong {
 		color: @offwhite;
 	}
-	p.lead {
-		
+	textarea {
+		color: @text-color;
 	}
+	input { 
+		&[type="text"],
+		&[type="email"] {
+			color: @text-color; 
+		}
+		&[type="submit"] {
+			color: white;
+			border-color: white;
+			&:hover {
+				color: @brand-primary;
+				border-color: @brand-primary;
+			}
+		}
+	}
+	.well {
+		background-color: rgba(0,0,0,.3);
+	}
+	.content-secondary {
+		address strong {
+			color: white;
+		}
+	}
+	.social-footer {
+		a {
+			background-color: rgba(0,0,0,.15);
+			color: #fff;
+			&:hover {
+				background-color: rgba(0,0,0,.5);
+			}
+		}
+	}
+}
+.round(@size) {
+	height: @size;
+	width: @size;
+	line-height: @size;
+	border-radius: @size;
+	text-align: center;
+	
+}
+.anchor {
+	position: absolute;
+	top: -110px;
+	left: 0;
 }
 
 //
@@ -76,13 +127,15 @@
   // background-repeat: repeat-x;
   // border-color: darken(@btn-color, 14%);
 	background-color: transparent;
-	border: 2px solid #ccc;
+	border: 2px solid @brand-secondary;
 	border-radius: 2px;
-	color: @text-color;
+	color: @brand-secondary;
 	text-shadow: none;
+	.box-shadow(none);
+	.transition(all .3s);
   &:hover,
   &:focus  {
-    background-color: darken(@btn-color, 12%);
+    background: transparent;
     background-position: 0 -15px;
   }
 
@@ -116,7 +169,7 @@
 .btn-warning { .btn-styles(@btn-warning-bg); }
 .btn-danger  { .btn-styles(@btn-danger-bg); }
 .btn-cta		 {background-color: @brand-primary; color: #fff; border: none;}
-
+input[type="submit"] { .btn-styles(@btn-primary-bg); }
 //
 // Images
 // --------------------------------------------------
@@ -334,8 +387,8 @@
 	display: none;
 }
 
-// Table 
-// -------------------------------------------------
+
+// ------------------------------------------------- // Table 
 
 .track-row(@color) {
 	h4 {
@@ -344,12 +397,12 @@
 }
 
 .table.table-schedule {
-
+	border: 1px solid #462A58;
 	> tbody, tfoot, thead {
 		> tr {
 			td, th {
 				// border-top-color: #EAE0DA;
-				border-top-color: rgba(255,255,255,.1);
+				border-top-color: #462A58;
 			}
 		}
 	}
@@ -357,7 +410,7 @@
 	th, td  {
 		font-weight: normal;
 		padding: 30px;
-		font-size: 1em;
+		font-size: 17px;
 	}
 	th {
 		// background-color: #DBCAC0;
@@ -391,14 +444,15 @@
 	}
 }
 
-// Typography
-// -------------------------------------------------
+
+// ------------------------------------------------- // Typography
 
 body {
 	font-family: 'Magra', sans-serif;
 	font-size: 16px;
 	padding-top: 100px;
 	color: #665F68;
+	line-height: @line-height-base;
 }
 
 body.admin-bar {
@@ -422,7 +476,8 @@ h1, h2, h3, h4, h5, p, ul, ol, address, blockquote {
 
 p, ol, ul, blockquote, address {
 	font-family: @font-family-secondary;
-	font-size: 16px;
+	font-size: @font-size-base;
+	line-height: @line-height-base;
 }
 em {
 	font-style: italic;
@@ -446,13 +501,13 @@ em {
 	}
 }
 
-// Site Content 
-// ----------------------------------------------------
+
+// ---------------------------------------------------- // Site Content 
 
 
 
-// GLOBAL NAV
-// -------------------------------------------------
+
+// ------------------------------------------------- // GLOBAL NAV
 
 #masthead {
 	.navbar {
@@ -590,8 +645,8 @@ em {
 }
 
 
-// STAY INFORMED
-// ----------------------------------------------------
+
+// ---------------------------------------------------- // STAY INFORMED
 
 #email-updates {
 	padding-bottom: 30px;
@@ -629,8 +684,8 @@ em {
 	}
 }
 
-// FOOTER REGISTRATION
-// ----------------------------------------------------
+
+// ---------------------------------------------------- // FOOTER REGISTRATION
 
 #footer-register {
 	padding: 0;
@@ -647,15 +702,15 @@ em {
 	}
 }
 
-// PAGE HEADER 
-// -----------------------------------------------------
+
+// ----------------------------------------------------- // PAGE HEADER 
 
 header.page-header {
 	border-bottom: none;
 }
 
-// GLOBAL FOOTER 
-// -----------------------------------------------------
+
+// ----------------------------------------------------- // GLOBAL FOOTER 
 
 #global-footer {
 	
@@ -665,6 +720,32 @@ header.page-header {
 	p {
 		// color: darken(#E3D1C4, 20%);
 		color: #aaa;
+	}
+}
+.copyright {
+	.make-sm-column(6);
+	@media (max-width: @screen-xs-max) {
+		text-align: center;
+	}
+}
+
+.social-footer {
+	.make-sm-column(6);
+	text-align: right;
+	margin-top: -5px;
+	@media (max-width: @screen-xs-max) {
+		text-align: center;
+	}
+	p {
+		margin: 0;
+	}
+	a {
+		display: inline-block;
+		.round(44px);
+		margin: 5px;
+		background-color: rgba(0,0,0,.05);
+		background-color: #eee;
+		color: @text-color;
 	}
 }
 .home {
@@ -714,6 +795,7 @@ header.page-header {
 #schedule {
 	.section-inverse;
 	text-align: center;
+	
 	.choose {
 		color: @brand-primary;
 		font-family: @font-family-secondary;
@@ -724,22 +806,14 @@ header.page-header {
 		margin-bottom: @grid-gutter-width;
 		padding: @grid-gutter-width;
 	}
-	.time {
-		font-size: 1.4em;
-		strong {
-			margin-left: 10px;
-			display: block;
-			margin-top: .6em;
-			font-size: 1.3em;
-			font-weight: normal;
-		}
-	}
+	
 	.track {
 		display: block;
 		color: white;
 		margin-bottom: 2em;
 		border-radius: 3px;
 		border: 3px solid #000;
+		position: relative;
 		
 		h4 {
 			font-size: 16px;
@@ -748,6 +822,13 @@ header.page-header {
 		}
 		h5 {
 			font-size: 24px;
+		}
+		.track-speakers,
+		.track-room {
+			padding-top: @grid-gutter-width*1.5;
+		}
+		.description {
+			font-size: .9em;
 		}
 		&.track-blue {
 			.track(lighten(@blue, 10%));
@@ -762,11 +843,49 @@ header.page-header {
 			.track(@green);
 		}
 	}
-	
+	&.schedule-secondary {
+		padding-top: 0;
+		h3 {
+			font-size: 1.8em;
+			margin: 1em 0 1em;
+		}
+		.track-speakers {
+			font-size: 1.2em;
+		}
+		.time {
+			font-size: 1.2em;
+			.make-row();
+			margin-bottom: 1em;
+			.timestamp {
+				.make-xs-column(6);
+				text-align: right;
+			}
+			strong {
+				font-weight: normal;
+				.make-xs-column(6);
+				text-align: left;
+			}
+		}
+	}
 }
 
 .page-schedule {
 	.page-inverse;
+}
+
+.home {
+	#schedule {
+		.time {
+			font-size: 1.4em;
+			strong {
+				margin-left: 10px;
+				display: block;
+				margin-top: .6em;
+				font-size: 1.3em;
+				font-weight: normal;
+			}
+		}
+	}
 }
 
 // Speaker Bios
@@ -856,6 +975,38 @@ header.page-header {
 	h1 {
 		a {
 			background-image: url('../images/logo.svg');
+		}
+	}
+}
+.qafp-category#schedule {
+	background-color: transparent;
+	text-align: left;
+	h3 {
+		color: @text-color;
+	}
+}
+
+// -------------------------------------------------------- Contact Us
+.page-contact-us, 
+.page-contact {
+	background: url("../images/laptop-girl.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	.page-inverse;
+	
+	.well {
+		.fa {
+			font-size: 24px;
+			background-color: rgba(0,0,0,.2);
+			.round(44px);
+			margin: 5px;
+			color: white;
+			.transition(all .3s);
+			&:hover {
+				background-color: rgba(0,0,0,.8);
+			}
 		}
 	}
 }

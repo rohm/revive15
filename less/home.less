@@ -277,6 +277,11 @@
 	#speakers {
 		.section-khaki;
 		text-align: center;
+		h3 {
+			color: @text-color;
+			margin: 2em auto 1em;
+			font-size: 2.7em;
+		}
 		.speaker {
 			img {
 				display: inline-block;
@@ -285,9 +290,35 @@
 			}
 			h3 {
 				color: @brand-secondary;
+				margin: .4em 0 0;
+				font-size: 2em;
+			}
+			.role {
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-size: .9em;
+				font-family: @font-family-base;
+			}
+		}
+		.btn-lg {
+			margin-bottom: -@grid-gutter-width*2;
+			position: relative;
+		}
+		.speakers-secondary {
+			margin-top: @grid-gutter-width;
+			margin-bottom: @grid-gutter-width;
+			.speaker {
+				
+				h3 {
+					margin-top: 18px;
+					font-size: 1.7em;
+					margin-bottom: .4em;
+				}
 			}
 		}
 	}
+	
+	
 }
 
  
