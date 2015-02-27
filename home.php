@@ -33,7 +33,15 @@ get_header(); ?>
 	<section id="social-buttons">
 		<div class="container">
 			<!-- Go to www.addthis.com/dashboard to customize your tools -->
-			<em class="tiny-label">Follow us</em> <div class="addthis_horizontal_follow_toolbox"></div>
+			<em class="tiny-label">Follow us</em> 
+			<p>
+				<a href="http://www.facebook.com/reviveourhearts"><i class="fa fa-facebook"></i></a>
+				<a href="http://www.twitter.com/reviveourhearts"><i class="fa fa-twitter"></i></a>
+				<a href="http://www.youtube.com/reviveourhearts"><i class="fa fa-youtube"></i></a>
+				<a href="https://www.pinterest.com/reviveourhearts/"><i class="fa fa-pinterest"></i></a>
+				<a href="http://www.instagram.com/reviveourhearts"><i class="fa fa-instagram"></i></a>
+			</p>
+
 			
 		</div>
 
@@ -44,20 +52,25 @@ get_header(); ?>
 			<h2>Speakers</h2>
 			<div class="row">
 				<div class="col-sm-4 speaker speaker-main">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-nancy.jpg" alt="Nancy Leigh DeMoss" class="img-circle img-responsive" />
-					<h3>Nancy Leigh DeMoss</h3>
+					<a href="/speaker/#nancy">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-nancy.jpg" alt="Nancy Leigh DeMoss" class="img-circle img-responsive" />
+					</a>
+					<a href="/speaker/#nancy"><h3>Nancy Leigh DeMoss</h3></a>
 					<p class="role">Plenary Speaker</p>
 					<p class="speaker-url"><a href="http://twitter.com/nancydemoss">@NancyDemoss</a></p>
 				</div>
 				<div class="col-sm-4 speaker speaker-main">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-jen.jpg" alt="Jen Wilkin" class="img-circle img-responsive" />
-					<h3>Jen Wilkin</h3>
+					<a href="/speaker/#jen">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-jen.jpg" alt="Jen Wilkin" class="img-circle img-responsive" />
+					</a>
+					<a href="/speaker/#jen"><h3>Jen Wilkin</h3></a>
 					<p class="role">Plenary Speaker</p>
-					<p class="speaker-url"><a href="http://twitter.com/jenwilkin">@JenWilkin</a></p>
+					<p class="speaker-url"><a href="http://twitter.com/jenniferwilkin">@JenniferWilkin</a></p>
 				</div>
 				<div class="col-sm-4 speaker speaker-main">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-lauren.jpg" alt="Lauren Chandler" class="img-circle img-responsive" />
-					<h3>Lauren Chandler</h3>
+					<a href="/speaker/#lauren"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-lauren.jpg" alt="Lauren Chandler" class="img-circle img-responsive" />
+					</a>
+					<a href="/speaker/#lauren"><h3>Lauren Chandler</h3></a>
 					<p class="role">Worship Leader</p>
 					<p class="speaker-url"><a href="http://twitter.com/laurenchandler">@LaurenChandler</a></p>
 				</div>
@@ -66,23 +79,23 @@ get_header(); ?>
 			<div class="row speakers-secondary">
 				<h3>Track Speakers</h3>
 				<div class="col-sm-3 speaker speaker-main">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-trillia.jpg" alt="Trillia Newbell" class="img-circle img-responsive" />
-					<h3>Trillia Newbell</h3>
+					<a href="/speaker/#trillia"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-trillia.jpg" alt="Trillia Newbell" class="img-circle img-responsive" /></a>
+					<a href="/speaker/#trillia"><h3>Trillia Newbell</h3></a>
 					<p class="speaker-url"><a href="http://twitter.com/trillianewbell">@TrilliaNewbell</a></p>
 				</div>
 				<div class="col-sm-3 speaker speaker-main">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-cooks.jpg" alt="Steve &amp; Vikki Cook" class="img-circle img-responsive" />
-					<h3>Steve &amp; Vikki Cook</h3>
+					<a href="/speaker/#cooks"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-cooks.jpg" alt="Steve &amp; Vikki Cook" class="img-circle img-responsive" /></a>
+					<a href="/speaker/#cooks"><h3>Steve &amp; Vikki Cook</h3></a>
 					<p class="speaker-url"><a href="http://twitter.com/SovGraceMusic">@SovGraceMusic</a></p>
 				</div>
 				<div class="col-sm-3 speaker speaker-main">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-lore.jpg" alt="Lore Ferguson" class="img-circle img-responsive" />
-					<h3>Lore Ferguson</h3>
+					<a href="/speaker/#lore"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-lore.jpg" alt="Lore Ferguson" class="img-circle img-responsive" /></a>
+					<a href="/speaker/#lore"><h3>Lore Ferguson</h3></a>
 					<p class="speaker-url"><a href="http://twitter.com/loreferguson">@LoreFerguson</a></p>
 				</div>
 				<div class="col-sm-3 speaker speaker-main">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-logos.jpg" alt="Logos" class="img-circle img-responsive" />
-					<h3>Logos</h3>
+					<a href="/speaker/#logos"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-logos.jpg" alt="Logos" class="img-circle img-responsive" /></a>
+					<a href="/speaker/#logos"><h3>Logos</h3></a>
 					<p class="speaker-url"><a href="http://twitter.com/logos">@Logos</a></p>
 				</div>
 			</div>
@@ -114,7 +127,7 @@ get_header(); ?>
 				<a class="track track-blue" href="/schedule/#blue">
 					<h4>Blue Track</h4>
 					<h5>Speaking&mdash;Speak to Transform Lives</h5>
-					<p class="speakers">Nancy Leigh DeMoss <span class="amp">&amp;</span> Trillia Newbell</p>
+					<p class="speakers">Nancy Leigh DeMoss, Trillia Newbell<br> Paula Hendricks, Andrea Griffith</p>
 					<div class="btn btn-bordered">Read More</div>
 				</a>
 				<a class="track track-yellow" href="/schedule/#yellow">
@@ -126,7 +139,7 @@ get_header(); ?>
 				<a class="track track-red" href="/schedule/#red">
 					<h4>Red Track</h4>
 					<h5>Writing&mdash;Write to Touch Hearts</h5>
-					<p class="speakers">Lore Ferguson</p>
+					<p class="speakers">Lore Ferguson<br>Erin Davis, Jennifer Lyell</p>
 					<div class="btn btn-bordered">Read More</div>
 				</a>
 				<a class="track track-green" href="/schedule/#green">

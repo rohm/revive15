@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+<meta property="og:title" content="{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}">
+<meta name="twitter:title" content="{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}">
+{% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}" />{% endif %}
+        <style type="text/css">
+        /*<![CDATA[*/
+            /* iOS automatically adds a link to addresses */
+            /* Style the footer with the same color as the footer text */
+            #footer a {
+                color: #4598BA;
+                -webkit-text-size-adjust: none;
+                text-decoration: underline;
+                font-weight: normal;
+            }
+
+            #main_body {
+                box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Hide preview text on rendering */
+            #preview_text {
+                display: none;
+            }
+
+            /* This targets the style of the devotional title in the body */
+            #hs_cos_wrapper_hs_email_body > table > tbody > tr > td > table > tbody > tr > td > a  {
+                font-size:30px !important; 
+                line-height:30px !important; 
+                color:#943603 !important; 
+                font-family:Helvetica, Arial, sans-serif !important;
+                font-weight: bold !important;
+            }
+            
+            /* This targets the style of the horizontal rules in the body */
+            #hs_cos_wrapper_hs_email_body > table > tbody > tr > td > table > tbody > tr > td > div > hr  {
+                border: 0 !important;
+                height: 0 !important;
+                border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+            }
+
+            /* This targets devotional body copy */
+            #devo_body {
+                margin-bottom:1em; 
+                font-size:17px; 
+                line-height:20px; 
+                font-family:Helvetica, Arial, sans-serif;
+            }
+            
+            /* This targets devotional add-on images using this class: */
+            .devoimage {
+                -ms-interpolation-mode: bicubic;
+                width: 50%;
+                max-width: 320px;
+            }
+
+        /*]]>*/
+        </style>
+</head>
+
+<body  bgcolor="#ffffff" style="margin: 0; padding: 0;  background-color: #ffffff">
+
+<!-- Preview text (text which appears right after subject) -->
+        <div id="preview_text" style="display:none!important">{% text "preview_text" label="Preview Text <span class=help-text>This will be used as the preview text that displays in some email clients</span>", value="", no_wrapper=True %}</div>
+        
+<!-- content -->
+<table style="max-width:650px;">
+<tr>
+    <td align="right" style="font-size:11px; color:#333333; font-family:Arial, Helvetica, sans-serif;">
+        <em>Email looking strange? <a href="{{ view_as_page_url }}" style="color:blue; text-decoration:none;">View it in browser</a>
+    </em></td>
+</tr>
+<tr>
+<td><a href="http://www.truthforlife.org"><img style="min-width:400px; max-width:650px; width:100%; -ms-interpolation-mode:bicubic;" border="0" src="http://cdn2.hubspot.net/hub/331596/file-691306324-png/tfl-logo-email-apr2014.png"></a></td>
+</tr>
+<tr><td style="padding-left:30px; padding-right:25px;">
+<p style="height:0px;">&nbsp;</p>
+    {% content_attribute "email_body" %}{% end_content_attribute %}
+</td>
+</tr>
+<tr>
+  <td align="center"><span style="margin-bottom: 1em; font-size:18px; line-height:20px; font-family:Helvetica, Arial, sans-serif;">Share this devotional with a friend!<br>
+  <a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.truthforlife.org%2Fresources%2Fdaily-devotionals%2F" target="_blank">
+  <img src="https://static.hubspot.com/final/img/common/icons/social/facebook-24x24.png" width="24" height="24" hspace="0" alt="Share on Facebook"></a> 
+  <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.truthforlife.org%2Fresources%2Fdaily-devotionals%2F%3Futm_medium%3Dsocial%26utm_source%3Dtwitter&url=http%3A%2F%2Fwww.truthforlife.org%2Fresources%2Fdaily-devotionals%2F%3Futm_medium%3Dsocial%26utm_source%3Dtwitter&source=tweetbutton&text=Belonging" target="_blank"><img src="https://static.hubspot.com/final/img/common/icons/social/twitter-24x24.png" width="24" height="24" hspace="0" alt="Share on Twitter"></a> <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.truthforlife.org%2Fresources%2Fdaily-devotionals%2F%3Futm_medium%3Dsocial%26utm_source%3Dgoogle_plus" target="_blank"><img src="https://static.hubspot.com/final/img/common/icons/social/googleplus-24x24.png" width="24" height="24" hspace="0" alt="Share on Google+"></a> <a href="mailto:?subject=Check%20out%20http%3A%2F%2Fwww.truthforlife.org%2Fresources%2Fdaily-devotionals%2F%3Futm_medium%3Dsocial%26utm_source%3Demail%20&body=Check%20out%20http%3A%2F%2Fwww.truthforlife.org%2Fresources%2Fdaily-devotionals%2F%3Futm_medium%3Dsocial%26utm_source%3Demail" target="_blank"><img src="https://static.hubspot.com/final/img/common/icons/social/email-24x24.png" width="24" height="24" hspace="0" alt="Share on Email"></a></span></td></tr>
+<tr><td style="padding-left:25px; padding-right:20px;"><p id="footer" style="padding-left:20px; padding-right:20px; font-family: Geneva, Verdana, Arial, Helvetica, sans-serif; text-align: center; font-size: 13px; line-height: 1.34em; color: {{ secondary_font_color }}; display: block;">
+{{ site_settings.company_name }}
+&nbsp;&nbsp;{{ site_settings.company_street_address_1 }}
+&nbsp;{{ site_settings.company_street_address_2 }}
+&nbsp;{{ site_settings.company_city }},
+&nbsp;{{ site_settings.company_state }}
+&nbsp;&nbsp;{{ site_settings.company_zip }}
+&nbsp;&nbsp;{{ site_settings.company_country }}
+<br/><br/>
+You received this email because you are subscribed to {{ subscription_name }} from {{ site_settings.company_name }}.
+<br/><br/>
+Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}" style="text-decoration: underline; whitespace: nowrap; color: inherit;">email preferences</a> to choose the types of emails you receive.
+<br/><br/>
+&nbsp;<a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}" style="text-decoration: underline; whitespace: nowrap; color: inherit;">Unsubscribe from all future emails</a>&nbsp;
+</p></td></tr>
+</table>
+<!-- end content -->
+
+</body>
+</html>
+

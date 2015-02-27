@@ -25,57 +25,59 @@ get_header(); ?>
 						<div class="row track track-blue">
 							<span class="anchor" id="blue"></span>
 							<div class="col-sm-3 track-speakers">
-								Nancy Leigh DeMoss &amp; Trillia&nbsp;Newbell	
+								<ul class="list-unstyled list-speakers">
+									<li><a href="/speakers/#nancy">Nancy Leigh DeMoss</a></li>
+									<li><a href="/speakers/#trillia">Trillia Newbell</a></li>
+									<li><a href="/speakers/#paula">Paula Hendricks</a></li>
+									<li><a href="/speakers/#andrea">Andrea Griffith</a></li>
+								</ul>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-sm-7">
 								<h4>Blue Track</h4>
 								<h5>Speaking&mdash;Speak to Transform Lives</h5>
-								<p class="description">If you're interested in teaching or speaking to women, one of your greatest resources can be learning from those who have mined precious truths from God's Word and then labored to share these treasures with others. Join Nancy Leigh DeMoss and Trillia Newbell, along with other seasoned speakers and Bible teachers, for practical wisdom on how to communicate more effectively in your unique setting.</p>
-							</div>
-							<div class="col-sm-2 track-room">
-								TBD
+								<p class="description">If you&rsquo;re interested in teaching or speaking to women, one of your greatest resources can be learning from those who have mined precious truths from God's Word and then labored to share these treasures with others. Join Nancy Leigh DeMoss, Trillia Newbell, Andrea Griffith, and Paula Hendricks for practical wisdom on how to communicate more effectively in your&nbsp;unique&nbsp;setting. </p>
 							</div>
 						</div>
 						<div class="row track track-yellow">
 							<span class="anchor" id="yellow"></span>
 							<div class="col-sm-3 track-speakers">
-								Lauren Chandler, Steve&nbsp;&amp;&nbsp;Vikki&nbsp;Cook
+								<ul class="list-unstyled list-speakers">
+									<li><a href="/speakers/#lauren">Lauren Chandler</a></li> 
+									<li><a href="/speakers/#cooks">Steve&nbsp;&amp;&nbsp;Vikki&nbsp;Cook</a></li>
+								</ul>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-sm-7">
 								<h4>Yellow Track</h4>
 								<h5>Worship&mdash;Worship to Bless the Lord</h5>
-								<p class="description">Who said Sundays were for sleeping in? You're up at the crack of dawn, trying to keep your voice from cracking while rubbing sleep out of the corners your eyes. It's a challenge—in more ways than one. Lauren Chandler, along with Steve and Vikki Cook know that. Come talk with them about everything from why it's so worth the missed sleep . . . to how to make it easier for others to enter into worship . . . to how to worship God yourself while you're frantically trying to get all those accidentals right . . . to how to worship God and not self when the music flows and the people applaud.</p>
-							</div>
-							<div class="col-sm-2 track-room">
-								TBD
+								<p class="description">Who said Sundays were for sleeping in? You're up at the crack of dawn, trying to keep your voice from cracking while rubbing sleep out of the corners your eyes. It's a challenge—in more ways than one. Lauren Chandler, along with Steve and Vikki Cook know that. Come talk with them about everything from why it's so worth the missed sleep . . . to how to make it easier for others to enter into worship . . . to how to worship God yourself while you're frantically trying to get all those accidentals right . . . to how to worship God and not self when the music flows and the&nbsp;people&nbsp;applaud.</p>
 							</div>
 						</div>	
 						<div class="row track track-red">
 							<span class="anchor" id="red"></span>
 							<div class="col-sm-3 track-speakers">
-								Lore Ferguson	
+								<ul class="list-unstyled list-speakers">
+									<li><a href="/speakers/#lore">Lore Ferguson</a>	</li>
+									<li><a href="/speakers/#erin">Erin Davis</a></li>
+									<li><a href="/speakers/#jennifer">Jennifer Lyell</a></li>
+								</ul>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-sm-7">
 								<h4>Red Track</h4>
 								<h5>Writing&mdash;Write to Touch Hearts</h5>
-								<p class="description">You've been there. Confused, despairing, afraid . . . until another woman's words infused you with fresh grace and renewed hope. Now it's your turn to grace other women with your words. Come hear why it matters that you write, and how you can write well. Be inspired and helped by women writers like you. Join Lore Ferguson and a panel of talented writers for three solid hours of practical tips . . . and so much more.</p>
-							</div>
-							<div class="col-sm-2 track-room">
-								TBD
+								<p class="description">You&rsquo;ve been there. Confused, despairing, afraid . . . until another woman's words infused you with fresh grace and renewed hope. Now it's your turn to grace other women with your words. Come hear why it matters that you write, and how you can write well. Be inspired and helped by women writers like you. Join Lore Ferguson, Erin Davis, and Jennifer Lyell for three solid hours of practical tips . . . and so&nbsp;much&nbsp;more.</p>
 							</div>
 						</div>
 						<div class="row track track-green">
 							<span class="anchor" id="green"></span>
 							<div class="col-sm-3 track-speakers">
-								Logos Rep	
+								<ul class="list-unstyled list-speakers">
+									<li><a href="/speakers/#logos">Logos Rep</a></li>
+								</ul>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-sm-7">
 								<h4>Green Track</h4>
 								<h5>Logos &mdash; Study to Discover Pure Gold</h5>
-								<p class="description">So you have a doctoral level program hanging out on your desktop, but when it comes to knowing how to leverage it, you feel like . . . a preschooler! Well, not for long. It's time to grow up. Bring your laptop and Logos software for three whole hours of hands-on training, and leave feeling like a top-notch Bible study scholar!</p>
-							</div>
-							<div class="col-sm-2 track-room">
-								TBD
+								<p class="description">So you have a doctoral level program hanging out on your desktop, but when it comes to knowing how to leverage it, you feel like . . . a preschooler! Well, not for long. It's time to grow up. Bring your laptop and Logos software for three whole hours of hands-on training, and leave feeling like a top-notch Bible study&nbsp;scholar!</p>
 							</div>
 						</div>
 							
@@ -89,7 +91,7 @@ get_header(); ?>
 						<div class="time"><span class="timestamp">8:30 a.m.–12:00 p.m.</span> <strong>Session 3</strong></div>
 						<div class="time"><span class="timestamp">12:00 p.m.–1:30 p.m.</span> <strong>Lunch on your own in the area</strong></div>
 						<div class="time"><span class="timestamp">1:30 p.m.–4:00 p.m.</span> <strong>Session 4</strong></div>
-						<div class="time"><span class="timestamp">4:00 p.m.</span> <strong>Conference ends . . . Go teach!</strong></div>
+						<div class="time"><span class="timestamp">4:00 p.m.</span> <strong>Conference ends . . . Go&nbsp;teach!</strong></div>
 						
 					</section>
 				

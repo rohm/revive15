@@ -35,6 +35,11 @@
 			border-color: @brand-primary;
 		}
 	}
+
+	.track {
+		color: white;
+	}
+
 }
 .section-khaki {
 	background-color: lighten(@khaki, 10%);
@@ -87,7 +92,7 @@
 	line-height: @size;
 	border-radius: @size;
 	text-align: center;
-	
+	display: inline-block;
 }
 .anchor {
 	position: absolute;
@@ -225,16 +230,6 @@ input[type="submit"] { .btn-styles(@btn-primary-bg); }
   // #gradient > .vertical(@start-color: lighten(@navbar-inverse-bg, 10%); @end-color: @navbar-inverse-bg);
   .reset-filter(); // Remove gradient in IE<10 to fix bug where dropdowns don't get triggered
 	-webkit-font-smoothing: subpixel-antialiased;
-//  .navbar-nav > .open > a,
-//  .navbar-nav > .active > a {
-//  #gradient > .vertical(@start-color: @navbar-inverse-link-active-bg; @end-color: lighten(@navbar-inverse-link-active-bg, 2.5%));
-//     .box-shadow(inset 0 3px 9px rgba(0,0,0,.25));
-//  }
-
-// .navbar-brand,
-//   .navbar-nav > li > a {
-//     text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-//   }
 }
 
 // Undo rounded corners in static and fixed navbars
@@ -255,6 +250,8 @@ input[type="submit"] { .btn-styles(@btn-primary-bg); }
     }
   }
 }
+
+
 
 
 //
@@ -396,54 +393,6 @@ input[type="submit"] { .btn-styles(@btn-primary-bg); }
 	}
 }
 
-.table.table-schedule {
-	border: 1px solid #462A58;
-	> tbody, tfoot, thead {
-		> tr {
-			td, th {
-				// border-top-color: #EAE0DA;
-				border-top-color: #462A58;
-			}
-		}
-	}
-
-	th, td  {
-		font-weight: normal;
-		padding: 30px;
-		font-size: 17px;
-	}
-	th {
-		// background-color: #DBCAC0;
-		background-color: lighten(@brand-secondary, 5%);
-		text-align: center;
-		font-size: 1.5em;
-		color: #333;
-	}
-	th {
-		&.speaker, &.description, &.room {
-			// background-color: #EAE0DA;
-			text-align: left;
-			font-size: 1em;
-		}
-	}
-	th, td {
-		&.speaker {
-			width: 24%;
-		}
-	}
-	tr:nth-child(even) td {
-	// background-color: #fcfbfb;
-	}
-	h4 {
-		color: lighten(#331347, 12%);
-		font-size: 20px;
-		margin: 0;
-	}
-	tr.blue {
-		.track-row(@blue);
-	}
-}
-
 
 // ------------------------------------------------- // Typography
 
@@ -515,16 +464,27 @@ em {
 		border: none;
 		.box-shadow(0 2px 20px rgba(0,0,0,.3));
 		// .box-shadow(0 3px 0 rgba(0,0,0,.2));
-
+		@media (max-width: @screen-xs-max) {
+			.container {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
 	}
 	.navbar-nav {
 		float: none;
+		text-align: center;
 	}
 	.navbar-nav > li.cta {
-		float: right;
+		@media (min-width: @screen-sm-min) {
+			float: right;
+		}
 		> a {
 			background-color: @brand-primary;
 			color: #fff;
+			&:hover {
+				background-color: darken(@brand-primary, 5%);
+			}
 		}
 	}
 	.navbar-nav > li {
@@ -535,6 +495,9 @@ em {
 				background-color: rgba(0,0,0,.3);
 				color: white;
 			}
+		}
+		@media (max-width: @screen-xs-max) {
+			display: block;
 		}
 	}
 	.navbar-nav > li > a {
@@ -564,6 +527,9 @@ em {
 	.make-sm-column(6);
 	.make-sm-column-offset(3);
 	.box-shadow(0 3px 0 rgba(0,0,0,.2));
+	&:hover {
+		background-color: darken(@brand-primary, 5%);
+	}
 }
 
 .content-full-width {
@@ -793,7 +759,6 @@ header.page-header {
 }
 
 #schedule {
-	.section-inverse;
 	text-align: center;
 	
 	.choose {
@@ -809,7 +774,7 @@ header.page-header {
 	
 	.track {
 		display: block;
-		color: white;
+		color: @text-color;
 		margin-bottom: 2em;
 		border-radius: 3px;
 		border: 3px solid #000;
@@ -835,6 +800,9 @@ header.page-header {
 		}
 		&.track-yellow {
 			.track(@yellow);
+			h4 {
+				color: #E5E71A;
+			}
 		}
 		&.track-red {
 			.track(@red);
@@ -848,6 +816,13 @@ header.page-header {
 		h3 {
 			font-size: 1.8em;
 			margin: 1em 0 1em;
+		}
+		.track {
+			&:hover {
+				text-decoration: none;
+				.opacity(1);
+				background: white;
+			}
 		}
 		.track-speakers {
 			font-size: 1.2em;
@@ -870,11 +845,18 @@ header.page-header {
 }
 
 .page-schedule {
-	.page-inverse;
+	// To make the schedule background purple, just remove the comment below
+	// .page-inverse;
+}
+
+.list-speakers {
+	text-align: left;
+	margin-left: 20px;
 }
 
 .home {
 	#schedule {
+		.section-inverse;
 		.time {
 			font-size: 1.4em;
 			strong {
@@ -894,6 +876,12 @@ header.page-header {
 .speaker-bio {
 	margin-bottom: 2em;
 	.make-row();
+	.role {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: .9em;
+		font-family: @font-family-base;
+	}
 	.speaker-photo {
 		.make-sm-column(3);
 		img {
@@ -912,6 +900,13 @@ header.page-header {
 	}
 	.bio {
 		.make-sm-column(9);
+		h3 {
+			position: relative;
+			span {
+				position: absolute;
+				top: -110px;
+			}
+		}
 	}
 }
 

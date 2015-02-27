@@ -2,12 +2,24 @@
 
 .home #hero {
 	background: #000;
-	background: url("../images/bg-hero-blurry-darken.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding-top: 270px;
+	
+	
+	@media (max-width: @screen-xs-max) {
+		background: url("../images/bg-hero-blurry-darken.jpg") no-repeat center center;
+	}
+	@media (min-width: @screen-sm-min) {
+		background: url("../images/bg-hero-blurry-darken.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		padding-top: 270px;
+		h1 {
+			padding-top: 100px;
+		}
+	}
+	
+	
 	padding-bottom: 200px;
 	@media(max-width: @screen-xs-max) {
 		padding-top: 50px;
@@ -24,7 +36,7 @@
 		background-size: 100% auto;
 		text-indent: -900em;
 		margin: 0 auto;
-		padding-top: 100px;
+		
 		max-width: 870px;
 
 	}
@@ -113,110 +125,126 @@
 		font-style: normal;
 		letter-spacing: 1px;
 	}
-	.addthis_toolbox {
-		float: none;
-		text-align: center;
-		font-weight: normal !important;
+	p {
 		> a {
-			float: none;
-			display: inline-block;
-			font-weight: normal !important;
-			font-size: 24px !important;
-			background: transparent;
-			text-indent: 0;
-			position: relative;
-			
-			> span {
-				height: 44px !important;
-				width: 44px !important;
-				background: #ef533a !important;
-				text-indent: 0;
-				.transition(all .3s);
-				border-radius: 24px;
-				&:before {
-					font-family: 'FontAwesome';
-					height: 20px;
-					width: 20px;
-					position: absolute;
-					top: 38%;
-					left: 50%;
-					margin-top: -10px;
-					margin-left: -10px;
-					z-index: 1;
-					color: white;
-				}
+			.round(44px);
+			background-color: rgba(0,0,0,.07);
+			.transition(all .3s);
+			&:hover {
+				background-color: rgba(0,0,0,.15);
 			}
-			&.addthis_button_facebook_follow {
+			margin: 0 1px;
+			.fa {
+				color: #fff;
+				font-size: 18px;
 				
-				> span {
-					
-					&:before {
-						content: "\f09a";
-					}
-				}
-				&:hover {
-					> span {
-						background: #305891 !important;
-					}
-				}
-			}
-			&.addthis_button_twitter_follow {
-				> span {
-
-					&:before {
-						content: "\f099";
-					}
-				}
-				&:hover {
-					> span {
-						background: #2CA8D2 !important;
-					}
-				}
-			}
-			&.addthis_button_vimeo_follow {
-				> span {
-					&:before {
-						content: "\f194";
-					}
-				}
-				&:hover {
-					> span {
-						background: #90CEEC !important;
-					}
-				}
-			}
-			&.addthis_button_pinterest_follow {
-				> span {
-					&:before {
-						content: "\f231";
-					}
-				}
-				&:hover {
-					> span {
-						background: #C82828 !important;
-					}
-				}
-			}
-			&.addthis_button_instagram_follow {
-
-
-				> span {
-
-					&:before {
-						content: "\f16d";
-					}
-				}
-				&:hover {
-					> span {
-						background: #765D41 !important;
-					}
-				}
 			}
 		}
 	}
-	.at300bs {
-		border-radius: 50%;
-	}
+	// .addthis_toolbox {
+// 		float: none;
+// 		text-align: center;
+// 		font-weight: normal !important;
+// 		> a {
+// 			float: none;
+// 			display: inline-block;
+// 			font-weight: normal !important;
+// 			font-size: 24px !important;
+// 			background: transparent;
+// 			text-indent: 0;
+// 			position: relative;
+//
+// 			> span {
+// 				height: 44px !important;
+// 				width: 44px !important;
+// 				background: #ef533a !important;
+// 				text-indent: 0;
+// 				.transition(all .3s);
+// 				border-radius: 24px;
+// 				&:before {
+// 					font-family: 'FontAwesome';
+// 					height: 20px;
+// 					width: 20px;
+// 					position: absolute;
+// 					top: 38%;
+// 					left: 50%;
+// 					margin-top: -10px;
+// 					margin-left: -10px;
+// 					z-index: 1;
+// 					color: white;
+// 				}
+// 			}
+// 			&.addthis_button_facebook_follow {
+//
+// 				> span {
+//
+// 					&:before {
+// 						content: "\f09a";
+// 					}
+// 				}
+// 				&:hover {
+// 					> span {
+// 						background: #305891 !important;
+// 					}
+// 				}
+// 			}
+// 			&.addthis_button_twitter_follow {
+// 				> span {
+//
+// 					&:before {
+// 						content: "\f099";
+// 					}
+// 				}
+// 				&:hover {
+// 					> span {
+// 						background: #2CA8D2 !important;
+// 					}
+// 				}
+// 			}
+// 			&.addthis_button_vimeo_follow {
+// 				> span {
+// 					&:before {
+// 						content: "\f194";
+// 					}
+// 				}
+// 				&:hover {
+// 					> span {
+// 						background: #90CEEC !important;
+// 					}
+// 				}
+// 			}
+// 			&.addthis_button_pinterest_follow {
+// 				> span {
+// 					&:before {
+// 						content: "\f231";
+// 					}
+// 				}
+// 				&:hover {
+// 					> span {
+// 						background: #C82828 !important;
+// 					}
+// 				}
+// 			}
+// 			&.addthis_button_instagram_follow {
+//
+//
+// 				> span {
+//
+// 					&:before {
+// 						content: "\f16d";
+// 					}
+// 				}
+// 				&:hover {
+// 					> span {
+// 						background: #765D41 !important;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.at300bs {
+// 		border-radius: 50%;
+// 	}
 }
 
 
@@ -287,11 +315,24 @@
 				display: inline-block;
 				margin: 0 auto;
 				border: 8px solid @brand-primary;
+				.transition(all .3s);
+				&:hover {
+					border-color: @brand-secondary;
+				}
+			}
+			a {
+				&:hover {
+					text-decoration: none;
+					h3 {
+						color: @brand-primary;
+					}
+				}
 			}
 			h3 {
 				color: @brand-secondary;
 				margin: .4em 0 0;
 				font-size: 2em;
+				.transition(all .3s);
 			}
 			.role {
 				text-transform: uppercase;
@@ -331,8 +372,18 @@
 	.section-khaki;
 	text-align: center;
 	border-bottom: 1px dashed #eee;
-	background: url('../images/laptop-girl.jpg') no-repeat center center fixed;
-	background-size: cover;
+	
+	@media (max-width: @screen-xs-max) {
+		background: url('../images/laptop-girl.jpg') no-repeat center right;
+		background-size: auto 100%;
+	}
+	@media (min-width: @screen-sm-min) {
+		background: url('../images/laptop-girl.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
 	
 	h2 {
 		color: white;
