@@ -21,7 +21,7 @@ get_header(); ?>
 				<div class="entry-content">
 					<section id="schedule" class="schedule-secondary">
 						<h3>Friday, September 25</h3>
-						<div class="time"><span class="timestamp">9:00a.m. - Noon</span> <strong>Pre-Conference</strong></div>
+						<div class="time"><span class="timestamp">9:00 a.m. - Noon</span> <strong>Pre-Conference</strong></div>
 						<div class="row track track-blue">
 							<span class="anchor" id="blue"></span>
 							<div class="col-sm-3 track-speakers">

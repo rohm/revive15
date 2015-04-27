@@ -307,7 +307,11 @@ get_header(); ?>
 			<p>Here&rsquo;s a <a href="http://www.icclos.com/pdf/ICCLOSMap100711.pdf"><i class="fa fa-map-marker"></i> map of the inside of the convention center</a>.</p>
 
 			<h3><i class="fa fa-bed"></i> Hotels</h3>
+
 			<p>One of the great things about the Indiana Convention Center is the enclosed walkway. We&rsquo;ve secured special rates for you at the Westin, Hyatt, Marriott, and Hilton. Hotel registration will open soon.</p>
+
+			<p><a href="https://resweb.passkey.com/go/revive15">Make your hotel registration here</a>.</p>
+
 
 
 			<h3>Travel</h3>
