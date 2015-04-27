@@ -17,18 +17,40 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Magra:400,700|Merriweather:400,700,700italic,400italic,300,300italic' rel='stylesheet' type='text/css'>
+<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/flipclock.css"> -->
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.countdown.css"> 
+
+
 <?php wp_head(); ?>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.plugin.min.js"></script> 
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.countdown.min.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54c711a64ebf6b10" async="async"></script>
-	
+
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header container" role="banner">
+
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		
+			<script>
+				jQuery(function ($) {
+					var austDay = new Date();
+					austDay = new Date(austDay.getFullYear() + 1, 1 - 1, -206);
+					$('#countdownTimer').countdown({until: austDay, format: 'dHM'});
+					$('#year').text(austDay.getFullYear());
+				});
+			</script>
+			<div id="adslice">
+				<span class="adslice-text">Registration ends: </span> <div id="countdownTimer"></div> <a class="btn btn-primary btn-sm" href="/register/">Register Now</a>
+			</div>
+			<!-- < ?php 
+				global $countdownTimer; 
+				echo 	$countdownTimer; 
+			? > --> 
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
