@@ -42,16 +42,29 @@ get_header(); ?>
 						</div>
 						</div>
 						<div class="speaker-bio">
-						<div class="speaker-photo"><img class="img-circle img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/speaker-jen.jpg" alt="Jen Wilkin" /></div>
-						<div class="bio">
-						<h3><span id="jen"></span>Jen Wilkin</h3>
-						<p class="role">Plenary Speaker</p>
-						<p class="speaker-url"><a href="http://twitter.com/jenniferwilkin">@JenniferWilkin</a></p>
+							<div class="speaker-photo">
+								<img class="img-circle img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/speaker-jen.jpg" alt="Jen Wilkin" />
+							</div>
+							<div class="bio">
+								<h3><span id="jen"></span>Jen Wilkin</h3>
+								<p class="role">Plenary Speaker</p>
+								<p class="speaker-url"><a href="http://twitter.com/jenniferwilkin">@JenniferWilkin</a></p>
 
-						<p>Jen Wilkin is a speaker, writer, and teacher of women&rsquo;s Bible studies in Dallas, Texas. She and her family are members of The Village Church where she currently serves on staff. Jen writes and teaches the Flower Mound Women&rsquo;s Bible Study, a 700-member interdenominational Bible study. Jen&rsquo;s passion is to see women become articulate, committed followers of Christ, with a clear understanding of why they believe what they believe, grounded in the Word of God.</p>
-						<blockquote><p>I love Jen&rsquo;s heart for the Word and am delighted that she will be joining me on the platform for Revive '15—our women's leadership conference—this fall!</p> <cite>—Nancy Leigh DeMoss</cite></blockquote>
+								<p>Jen Wilkin is a speaker, writer, and teacher of women&rsquo;s Bible studies in Dallas, Texas. She and her family are members of The Village Church where she currently serves on staff. Jen writes and teaches the Flower Mound Women&rsquo;s Bible Study, a 700-member interdenominational Bible study. Jen&rsquo;s passion is to see women become articulate, committed followers of Christ, with a clear understanding of why they believe what they believe, grounded in the Word of God.</p>
+								<blockquote><p>I love Jen&rsquo;s heart for the Word and am delighted that she will be joining me on the platform for Revive &rsquo;15—our women's leadership conference—this fall!</p> <cite>—Nancy Leigh DeMoss</cite></blockquote>
+							</div>
 						</div>
+
+						<div class="speaker-bio">
+							<div class="speaker-photo"><img class="img-circle img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/speaker-eric.jpg" alt="Jen Wilkin" /></div>
+							<div class="bio">
+								<h3><span id="eric"></span>Eric Mason</h3>
+								<p class="role">Plenary Speaker</p>
+								<p class="speaker-url"><a href="http://twitter.com/pastoremase">@PastorEMase</a></p>
+								<p>Dr. Eric Mason is a speaker, author, and the founder and lead pastor of Epiphany Fellowship in Philadelphia, PA. He lives in the heart of Philadelphia with his wife Yvette and their three sons. He is the founder and president of <em>Thriving</em>, an urban resource collaborative committed to developing leaders for ministry in an inner-city context. He also serves on the Executive Board of the Acts 29 Network. Dr. Mason has been graced by God to preach and teach at churches and conferences in the US and abroad.</p>
+							</div>
 						</div>
+
 						<div class="speaker-bio">
 						<div class="speaker-photo"><img class="img-circle img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/speaker-lauren.jpg" alt="Lauren Chandler" /></div>
 						<div class="bio">
@@ -134,7 +147,7 @@ Trent and Andrea speak for Family Life&rsquo;s Weekend to Remember Getaways, and
 								<p class="speaker-url"><a href="http://twitter.com/JenniferLyell">@JenniferLyell
 </a></p>
 
-								<p>Jennifer Lyell serves as Vice President of Trade Book Publishing for the trade publishing division of LifeWay Christian Resources. The 200+ titles that Jennifer has acquired, developed, or managed include New York Times Bestsellers, The Resolution for Women, The Vow, Wisdom of Faith, Reshaping It All, Balancing It All, and key brands such as She Reads Truth. She is passionate about biblical fidelity and substantive content. 
+								<p>Jennifer Lyell serves as Vice President of Trade Book Publishing for the trade publishing division of LifeWay Christian Resources. The 200+ titles that Jennifer has acquired, developed, or managed include New York Times Bestsellers, <em>The Resolution for Women</em>, <em>The Vow</em>, <em>Wisdom of Faith</em>, <em>Reshaping It All</em>, <em>Balancing It All</em>, and key brands such as She Reads Truth. She is passionate about biblical fidelity and substantive content. 
 </p>
 
 							</div>

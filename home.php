@@ -27,7 +27,7 @@ get_header(); ?>
 			<!-- <div class="embed-responsive embed-responsive-16by9">
 				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/f5rSODpF8uY?rel=0" allowfullscreen=""></iframe>
 			</div> -->
-			<p class="lead">Do you wish you knew how to more effectively study God's Word and teach it to women? If so, Revive '15 is just what you’re looking for. Get motivated, encouraged, and equipped!</p>
+			<p class="lead">Do you wish you knew how to more effectively study God's Word and teach it to women? If so, Revive '15 is just what you&rsquo;re looking for. Get motivated, encouraged, and equipped!</p>
 		</div>
 	</section>
 	<section id="social-buttons">
@@ -68,12 +68,24 @@ get_header(); ?>
 					<p class="speaker-url"><a href="http://twitter.com/jenniferwilkin">@JenniferWilkin</a></p>
 				</div>
 				<div class="col-sm-4 speaker speaker-main">
+					<a href="/speaker/#eric">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/speaker-eric.jpg" alt="Eric Mason" class="img-circle img-responsive" />
+					</a>
+					<a href="/speaker/#eric"><h3>Eric Mason</h3></a>
+					<p class="role">Plenary Speaker</p>
+					<p class="speaker-url"><a href="http://twitter.com/pastoremase">@PastorEMase</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4 speaker speaker-main">
 					<a href="/speaker/#lauren"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-lauren.jpg" alt="Lauren Chandler" class="img-circle img-responsive" />
 					</a>
 					<a href="/speaker/#lauren"><h3>Lauren Chandler</h3></a>
 					<p class="role">Worship Leader</p>
 					<p class="speaker-url"><a href="http://twitter.com/laurenchandler">@LaurenChandler</a></p>
 				</div>
+				<div class="col-sm-4"></div>
 			</div>
 			
 			<div class="row speakers-secondary">
@@ -288,23 +300,23 @@ get_header(); ?>
 			<h2>Lodging &amp; Travel</h2>
 
 
-			<h3>Revive ’15 will be held at the <a href="http://www.icclos.com/">Indiana Convention Center</a>:</h3>
+			<h3>Revive &rsquo;15 will be held at the <a href="http://www.icclos.com/">Indiana Convention Center</a>:</h3>
 			<address>100 South Capitol Ave.<br>
 						Indianapolis, IN 46225</address>
 
 			<p>Here&rsquo;s a <a href="http://www.icclos.com/pdf/ICCLOSMap100711.pdf"><i class="fa fa-map-marker"></i> map of the inside of the convention center</a>.</p>
 
 			<h3><i class="fa fa-bed"></i> Hotels</h3>
-			<p>One of the great things about the Indiana Convention Center is the enclosed walkway. We&rsquo;ve secured special rates for you at the Westin, Hyatt, Marriott, and Hilton. Hotel registration will open March 1.</p>
+			<p>One of the great things about the Indiana Convention Center is the enclosed walkway. We&rsquo;ve secured special rates for you at the Westin, Hyatt, Marriott, and Hilton. Hotel registration will open soon.</p>
 
 
 			<h3>Travel</h3>
 			
 			<p>Here&rsquo;s what you need to know about getting to and around downtown Indianapolis:</p>
 			<h4><i class="fa fa-plane"></i> Flying to Indy</h4>
-			<p>If you’re flying to Indianapolis, the airport is approximately fifteen miles from downtown. Not all the hotels provide a shuttle service to and from the airport, so you’ll want to check your hotel. If they don’t have a shuttle, click here for other <a href="http://www.icclos.com/attendees/getting-around-transportation.aspx">transportation options</a>.</p>
+			<p>If you&rsquo;re flying to Indianapolis, the airport is approximately fifteen miles from downtown. Not all the hotels provide a shuttle service to and from the airport, so you&rsquo;ll want to check your hotel. If they don&rsquo;t have a shuttle, click here for other <a href="http://www.icclos.com/attendees/getting-around-transportation.aspx">transportation options</a>.</p>
 			<h4><i class="fa fa-car"></i> Driving to Indy</h4>
-			<p>If you’re driving to Indianapolis, here are some helpful <a href="http://www.icclos.com/attendees/getting-around-transportation.aspx">directions</a>. Also, here&rsquo;s a <a href="http://www.icclos.com/pdf/DTParkingMap.pdf"><i class="fa fa-map-marker"></i> Downtown Parking Map</a>.</p>
+			<p>If you&rsquo;re driving to Indianapolis, here are some helpful <a href="http://www.icclos.com/attendees/getting-around-transportation.aspx">directions</a>. Also, here&rsquo;s a <a href="http://www.icclos.com/pdf/DTParkingMap.pdf"><i class="fa fa-map-marker"></i> Downtown Parking Map</a>.</p>
 
 
 			<h3><i class="fa fa-cutlery"></i> Eating in Indy</h3>
