@@ -981,6 +981,8 @@ header.page-header {
 	}
 }
 
+
+
 // -------------------------------------------------------- Contact Us
 .page-contact-us, 
 .page-contact {
@@ -1005,3 +1007,50 @@ header.page-header {
 		}
 	}
 }
+
+// -------------------------------------------------------- Adslice
+#adslice {
+	background-color: darken(@brand-secondary, 8%);
+	text-align: center;
+	.adslice-text {
+		margin: 0 20px -20px 0;
+		position: relative;
+		display: block;
+		line-height: 50px;
+		text-align: center;
+		color: #fff;
+		color: @brand-primary;
+		display: inline-block;
+	}
+	.is-countdown {
+		border:none;
+		background-color: transparent;
+		display: inline-block;
+		top: -10px;
+		position: relative;
+	}
+	.countdown-section {
+		width: auto;
+		margin-left: 10px;
+		margin-right: 10px;
+		display: inline-block;
+	}
+	.countdown-amount {
+		color: #fff;
+		display: inline-block;
+	}
+	.countdown-period {
+		color: rgba(255,255,255,.7);
+		display: inline-block;
+		margin-left: 3px;
+	}
+	.btn-primary {
+		border-color: @brand-primary;
+		color: @brand-primary;
+		&:hover {
+			border-color: darken(@brand-primary, 15%);
+			color: #fff;
+		}
+	}
+}
+
