@@ -36,21 +36,8 @@
 	<header id="masthead" class="site-header container" role="banner">
 
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<script>
-				jQuery(function ($) {
-					var austDay = new Date();
-					austDay = new Date(austDay.getFullYear() + 1, 1 - 1, -206);
-					$('#countdownTimer').countdown({until: austDay, format: 'dHM'});
-					$('#year').text(austDay.getFullYear());
-				});
-			</script>
-			<div id="adslice">
-				<span class="adslice-text">Registration ends: </span> <div id="countdownTimer"></div> <a class="btn btn-primary btn-sm" href="/register/">Register Now</a>
-			</div>
-			<!-- < ?php 
-				global $countdownTimer; 
-				echo 	$countdownTimer; 
-			? > --> 
+			<?php $mySnippet = PostSnippets::getSnippet("countdownTimer");
+echo $mySnippet; ?>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
