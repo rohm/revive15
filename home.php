@@ -28,6 +28,9 @@ get_header(); ?>
 				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/f5rSODpF8uY?rel=0" allowfullscreen=""></iframe>
 			</div> -->
 			<p class="lead">Do you wish you knew how to more effectively study God's Word and teach it to women? Are you a <strong>pastor&rsquo;s wife</strong>, a <strong>women&rsquo;s ministry leader</strong>, or a <strong>woman that teaches other women</strong>? If so, Revive &rsquo;15 is just what you’re looking for. Get motivated, encouraged, and equipped!</p>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/x1JNjF08BTI" frameborder="0" allowfullscreen></iframe>
+			</div>
 		</div>
 	</section>
 	<section id="social-buttons">
@@ -106,10 +109,9 @@ get_header(); ?>
 					<p class="speaker-url"><a href="http://twitter.com/loreferguson">@LoreFerguson</a></p>
 				</div>
 				<div class="col-sm-3 speaker speaker-main">
-					<a href="/speaker/#logos"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-scott.jpg" alt="Scott Lindsey" class="img-circle img-responsive" /></a>
-					<a href="/speaker/#logos"><h3>Scott Lindsey</h3></a>
-					<p class="role">Logos Bible Software</p>
-					<p class="speaker-url"><a href="http://twitter.com/scottlindsey">@scottlindsey</a></p>
+					<a href="/speaker/#scott"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-scott.jpg" alt="Scott Lindsey" class="img-circle img-responsive" /></a>
+					<a href="/speaker/#scott"><h3>Scott Lindsey</h3></a>
+					<p class="speaker-url"><a href="http://twitter.com/javajock">@JavaJock</a></p>
 				</div>
 				<!-- <div class="col-sm-3 speaker speaker-main">
 					<a href="/speaker/#logos"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-logos.jpg" alt="Logos" class="img-circle img-responsive" /></a>
