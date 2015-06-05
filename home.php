@@ -27,7 +27,10 @@ get_header(); ?>
 			<!-- <div class="embed-responsive embed-responsive-16by9">
 				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/f5rSODpF8uY?rel=0" allowfullscreen=""></iframe>
 			</div> -->
-			<p class="lead">Do you wish you knew how to more effectively study God's Word and teach it to women? If so, Revive '15 is just what you&rsquo;re looking for. Get motivated, encouraged, and equipped!</p>
+			<p class="lead">Do you wish you knew how to more effectively study God's Word and teach it to women? Are you a <strong>pastor&rsquo;s wife</strong>, a <strong>women&rsquo;s ministry leader</strong>, or a <strong>woman that teaches other women</strong>? If so, Revive &rsquo;15 is just what you’re looking for. Get motivated, encouraged, and equipped!</p>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/x1JNjF08BTI" frameborder="0" allowfullscreen></iframe>
+			</div>
 		</div>
 	</section>
 	<section id="social-buttons">
@@ -106,10 +109,15 @@ get_header(); ?>
 					<p class="speaker-url"><a href="http://twitter.com/loreferguson">@LoreFerguson</a></p>
 				</div>
 				<div class="col-sm-3 speaker speaker-main">
+					<a href="/speaker/#scott"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-scott.jpg" alt="Scott Lindsey" class="img-circle img-responsive" /></a>
+					<a href="/speaker/#scott"><h3>Scott Lindsey</h3></a>
+					<p class="speaker-url"><a href="http://twitter.com/javajock">@JavaJock</a></p>
+				</div>
+				<!-- <div class="col-sm-3 speaker speaker-main">
 					<a href="/speaker/#logos"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-logos.jpg" alt="Logos" class="img-circle img-responsive" /></a>
 					<a href="/speaker/#logos"><h3>Logos</h3></a>
 					<p class="speaker-url"><a href="http://twitter.com/logos">@Logos</a></p>
-				</div>
+				</div> -->
 			</div>
 			<a href="/speakers/" class="btn btn-lg btn-default">More Info</a>
 			<!-- <div class="row">
@@ -133,33 +141,35 @@ get_header(); ?>
 
 			<div class="day" id="friday-schedule" >
 				<h3>Friday, September 25</h3>
-				<p class="time">9:00 am – Noon <strong>Pre-Conference</strong></p>
-				<p class="lead">Your voice is necessary for reaching the women in your corner of the world for Christ. That&rsquo;s why we&rsquo;ve designed these tracks—so you might communicate His love and truth to them even&nbsp;more&nbsp;effectively. </p>
-				<h4 class="choose">Choose your track:</h4>
-				<a class="track track-blue" href="/schedule/#blue">
-					<h4>Blue Track</h4>
-					<h5>Speaking&mdash;Speak to Transform Lives</h5>
-					<p class="speakers">Nancy Leigh DeMoss, Trillia Newbell<br> Paula Hendricks, Andrea Griffith</p>
-					<div class="btn btn-bordered">Read More</div>
-				</a>
-				<a class="track track-yellow" href="/schedule/#yellow">
-					<h4>Yellow Track</h4>
-					<h5>Worship&mdash;Worship to Bless the Lord</h5>
-					<p class="speakers">Lauren Chandler, Steve <span class="amp">&amp;</span> Vikki Cook</p>
-					<div class="btn btn-bordered">Read More</div>
-				</a>
-				<a class="track track-red" href="/schedule/#red">
-					<h4>Red Track</h4>
-					<h5>Writing&mdash;Write to Touch Hearts</h5>
-					<p class="speakers">Lore Ferguson<br>Erin Davis, Jennifer Lyell</p>
-					<div class="btn btn-bordered">Read More</div>
-				</a>
-				<a class="track track-green" href="/schedule/#green">
-					<h4>Green Track</h4>
-					<h5>Logos &mdash; Study to Discover Pure Gold</h5>
-					<p class="speakers">Logos</p>
-					<div class="btn btn-bordered">Read More</div>
-				</a>
+				<p class="time">9:00 am – Noon <strong><a href="#preConference" data-toggle="collapse" aria-expanded="false" aria-controls="preConference">Pre-Conference <span style="color: #ccc;font-size:16px;">(click to expand)</span></strong></a></p>
+				<div class="collapse" id="preConference">
+					<p class="lead">Your voice is necessary for reaching the women in your corner of the world for Christ. That&rsquo;s why we&rsquo;ve designed these tracks—so you might communicate His love and truth to them even&nbsp;more&nbsp;effectively. </p>
+					<h4 class="choose">Choose your track:</h4>
+					<a class="track track-blue" href="/schedule/#blue">
+						<h4>Blue Track</h4>
+						<h5>Speaking&mdash;Speak to Transform Lives</h5>
+						<p class="speakers">Nancy Leigh DeMoss, Trillia Newbell<br> Paula Hendricks, Andrea Griffith</p>
+						<div class="btn btn-bordered">Read More</div>
+					</a>
+					<a class="track track-yellow" href="/schedule/#yellow">
+						<h4>Yellow Track</h4>
+						<h5>Worship&mdash;Worship to Bless the Lord</h5>
+						<p class="speakers">Lauren Chandler, Steve <span class="amp">&amp;</span> Vikki Cook</p>
+						<div class="btn btn-bordered">Read More</div>
+					</a>
+					<a class="track track-red" href="/schedule/#red">
+						<h4>Red Track</h4>
+						<h5>Writing&mdash;Write to Touch Hearts</h5>
+						<p class="speakers">Lore Ferguson<br>Erin Davis, Jennifer Lyell</p>
+						<div class="btn btn-bordered">Read More</div>
+					</a>
+					<a class="track track-green" href="/schedule/#green">
+						<h4>Green Track</h4>
+						<h5>Logos &mdash; Study to Discover Pure Gold</h5>
+						<p class="speakers">Logos</p>
+						<div class="btn btn-bordered">Read More</div>
+					</a>
+				</div>
 				<p class="time">2:00 pm – 10:00 pm<strong> Revive &rsquo;15 Main Sessions</strong></p>
 			</div>
 			<hr>
