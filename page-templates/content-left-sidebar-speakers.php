@@ -110,13 +110,13 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="speaker-bio">
-							<div class="speaker-photo"><img class="img-circle img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/speaker-logos.jpg" alt="Logos" /></div>
+							<div class="speaker-photo"><img class="img-circle img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/speaker-scott.jpg" alt="Scott Lindsey" /></div>
 								<div class="bio">
-								<h3><span id="logos"></span>Logos</h3>
+								<h3><span id="scott"></span>Scott Lindsey</h3>
 								<p class="role">Track Speaker</p>
-								<p class="speaker-url"><a href="http://twitter.com/logos">@Logos</a></p>
+								<p class="speaker-url"><a href="http://twitter.com/javajock">@JavaJock</a></p>
 
-								<p>Logos offers the world&rsquo;s premier Bible study software with more than 150 publishers to make more than 43,000 Bible study resources available to customers around the world. The Logos representative will help the Logos user go deeper in their studies using the Logos tools and features.</p>
+								<p>Scott Lindsey is the Ministry Relations Director for Logos Bible Software. His passion is to equip Christians with the best tools available for the lifelong pursuit of God through His Word. Logos offers the world’s premier Bible study software with more than 150 publishers to make more than 43,000 Bible study resources available to customers around the world. Scott will help the Logos user go deeper in their studies using the Logos tools and features.</p>
 							</div>
 						</div>
 						<div class="speaker-bio">
