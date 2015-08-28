@@ -37,6 +37,9 @@ get_header(); ?>
 									<h4>Blue Track</h4>
 									<h5>Speaking&mdash;Speak to Transform Lives</h5>
 									<p class="description">If you&rsquo;re interested in teaching or speaking to women, one of your greatest resources can be learning from those who have mined precious truths from God's Word and then labored to share these treasures with others. Join Nancy Leigh DeMoss, Trillia Newbell, Andrea Griffith, and Paula Hendricks for practical wisdom on how to communicate more effectively in your&nbsp;unique&nbsp;setting. </p>
+									
+									<div class="alert alert-danger" role="alert"> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> This track is FULL and no longer taking registrations.</div>
+									
 								</div>
 							</div>
 							<div class="row track track-yellow">
@@ -57,7 +60,7 @@ get_header(); ?>
 								<span class="anchor" id="red"></span>
 								<div class="col-sm-3 track-speakers">
 									<ul class="list-unstyled list-speakers">
-										<li><a href="/speakers/#lore">Lore Ferguson</a>	</li>
+										<li><a href="/speakers/#lore">Lore Ferguson Wilbert</a>	</li>
 										<li><a href="/speakers/#erin">Erin Davis</a></li>
 										<li><a href="/speakers/#jennifer">Jennifer Lyell</a></li>
 									</ul>
@@ -65,7 +68,7 @@ get_header(); ?>
 								<div class="col-sm-7">
 									<h4>Red Track</h4>
 									<h5>Writing&mdash;Write to Touch Hearts</h5>
-									<p class="description">You&rsquo;ve been there. Confused, despairing, afraid . . . until another woman's words infused you with fresh grace and renewed hope. Now it's your turn to grace other women with your words. Come hear why it matters that you write, and how you can write well. Be inspired and helped by women writers like you. Join Lore Ferguson, Erin Davis, and Jennifer Lyell for three solid hours of practical tips . . . and so&nbsp;much&nbsp;more.</p>
+									<p class="description">You&rsquo;ve been there. Confused, despairing, afraid . . . until another woman's words infused you with fresh grace and renewed hope. Now it's your turn to grace other women with your words. Come hear why it matters that you write, and how you can write well. Be inspired and helped by women writers like you. Join Lore Ferguson Wilbert, Erin Davis, and Jennifer Lyell for three solid hours of practical tips . . . and so&nbsp;much&nbsp;more.</p>
 								</div>
 							</div>
 							<div class="row track track-green">

@@ -104,9 +104,9 @@ get_header(); ?>
 					<p class="speaker-url"><a href="http://twitter.com/SovGraceMusic">@SovGraceMusic</a></p>
 				</div>
 				<div class="col-sm-3 speaker speaker-main">
-					<a href="/speaker/#lore"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-lore.jpg" alt="Lore Ferguson" class="img-circle img-responsive" /></a>
-					<a href="/speaker/#lore"><h3>Lore Ferguson</h3></a>
-					<p class="speaker-url"><a href="http://twitter.com/loreferguson">@LoreFerguson</a></p>
+					<a href="/speaker/#lore"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-lore.jpg" alt="Lore Ferguson Wilbert" class="img-circle img-responsive" /></a>
+					<a href="/speaker/#lore"><h3>Lore Ferguson Wilbert</h3></a>
+					<p class="speaker-url"><a href="http://twitter.com/lorewilbert">@LoreWilbert</a></p>
 				</div>
 				<div class="col-sm-3 speaker speaker-main">
 					<a href="/speaker/#scott"><img src="<?php echo get_template_directory_uri(); ?>/images/speaker-scott.jpg" alt="Scott Lindsey" class="img-circle img-responsive" /></a>
@@ -149,7 +149,7 @@ get_header(); ?>
 						<h4>Blue Track</h4>
 						<h5>Speaking&mdash;Speak to Transform Lives</h5>
 						<p class="speakers">Nancy Leigh DeMoss, Trillia Newbell<br> Paula Hendricks, Andrea Griffith</p>
-						<div class="btn btn-bordered">Read More</div>
+						<div class="alert alert-danger" role="alert"> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> This track is FULL and no longer taking registrations.</div>
 					</a>
 					<a class="track track-yellow" href="/schedule/#yellow">
 						<h4>Yellow Track</h4>
@@ -160,7 +160,7 @@ get_header(); ?>
 					<a class="track track-red" href="/schedule/#red">
 						<h4>Red Track</h4>
 						<h5>Writing&mdash;Write to Touch Hearts</h5>
-						<p class="speakers">Lore Ferguson<br>Erin Davis, Jennifer Lyell</p>
+						<p class="speakers">Lore Ferguson Wilbert<br>Erin Davis, Jennifer Lyell</p>
 						<div class="btn btn-bordered">Read More</div>
 					</a>
 					<a class="track track-green" href="/schedule/#green">
