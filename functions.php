@@ -220,3 +220,18 @@ function upbootwp_breadcrumbs() {
 
 	}
 }
+
+// sets English form cookie
+function set_form_3_complete_cookie() {
+	setcookie( 'live-stream-form-complete', 1, strtotime( '+30 days' ), COOKIEPATH, COOKIE_DOMAIN, false, false );
+}
+add_action( 'gform_after_submission_3', 'set_form_3_complete_cookie' );
+
+
+// sets Spanish form cookie
+function set_form_4_complete_cookie() {
+	setcookie( 'live-stream-form-complete', 1, strtotime( '+30 days' ), COOKIEPATH, COOKIE_DOMAIN, false, false );
+}
+add_action( 'gform_after_submission_4', 'set_form_4_complete_cookie' );
+
+
