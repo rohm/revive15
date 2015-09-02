@@ -6,7 +6,7 @@
  * @author Bryan VanHaitsma | https://www.reviveourhearts.com
  * @package upBootWP 1.1
  */
-get_header(); ?>
+get_header('live'); ?>
 
 <?php while (have_posts()) : the_post(); ?>
 	<div class="container">
@@ -20,6 +20,20 @@ get_header(); ?>
 				
 				<div class="entry-content">
 					
+					<a class="schedule pull-right" href="/schedule">
+						<i class="fa fa-list"></i> 
+						<?php
+
+							if (is_page('envivo')) {
+								echo 'Programa/Horario';
+							}
+							else {
+								echo 'Schedule';
+							}
+
+						?>
+						
+					</a>
 
 					
 					<?php
@@ -29,7 +43,18 @@ get_header(); ?>
 						if (is_page('envivo')) {
 							print "<p>Thank you for registering for the Revive ’15 Live stream. The LIVE stream will begin at 2:00pm ET on Friday September 25.</p><p>We will email you with further LIVE stream updates as we get closer to Revive ’15.</p>";
 						} elseif (is_page('live')) {
-							print "<p>Thank you for registering for the Revive ’15 Live stream. The LIVE stream will begin at 2:00pm ET on Friday September 25.</p><p>We will email you with further LIVE stream updates as we get closer to Revive ’15.</p>";
+							print "
+<p>Thanks for signing up for the Revive '15 LIVE stream. We are so excited that will be joining us. We will send out further announcements and updates as the date gets closer.</p>
+
+<h3>LIVE Stream Dates and Times:</h3>
+<ul>
+<li>September 25, 2:00-9:00 EDT</li>
+<li>September 26, 8:30-4:00 EDT</li>
+</ul>
+
+<h3>What to do Next:</h3>
+<p>
+Use the tools on this page to share the news about this LIVE stream with your friends.</p>";
 						} else {
 							print "Error: We have a cookie but no page set.";
 						}
