@@ -1,4 +1,5 @@
 
+
 //
 // Load core variables and mixins
 // --------------------------------------------------
@@ -1136,6 +1137,16 @@ header.page-header {
 body#live {
 	// background: #FF6C5C;
 	background: #f8f8f8;
+	.pipe {
+		font-style: normal;
+		color: #ccc;
+		margin: 0 5px;
+	}
+	&.customize-support {
+		.navbar {
+			margin-top: 30px;
+		}
+	}
 
 	// a {
 	// 	color: @brand-secondary;
@@ -1239,7 +1250,7 @@ body#live {
 		background-image: url('../img/live-placeholder-bg.jpg');
 		background-position: center top;
 		background-repeat: no-repeat;
-		color: #fff;
+		
 		padding: 50px;
 		min-height: 360px;
 		.box-sizing(border-box);
@@ -1295,7 +1306,6 @@ body#live {
 	.credit {
 		padding-top: 2em;
 		display: block;
-		color: #fff;
 	}
 	@media (max-width: @screen-sm) {
 		.gform_wrapper {
@@ -1311,6 +1321,20 @@ body#live {
 		.veilmainimage {
 			width: 100% !important;
 		}
+	}
+}
+
+.btn.btn-lg.btn-full-width {
+	background-color: #FF6C5C;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 2px;
+	display: block;
+	&:hover {
+		background-color: darken(#FF6C5C, 10%);
 	}
 }
 

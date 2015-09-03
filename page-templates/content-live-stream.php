@@ -16,20 +16,48 @@ get_header('live'); ?>
 				<?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
 				<header class="entry-header page-header">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
-					<a class="schedule" href="/schedule">
-						<i class="fa fa-list"></i> 
+					<nav>
+						<a class="schedule" href="#schedule">
+							<i class="fa fa-list"></i> 
+							<?php
+
+								if (is_page('envivo')) {
+									echo 'Programa/Horario';
+								}
+								else {
+									echo 'Schedule';
+								}
+
+							?>
+							
+						</a>
+					
 						<?php
+								if (is_page('envivo')) {
+									echo '<a href="/audio-en-vivo/" class="audio-only"><i class="fa fa-headphones fa-1x"></i> Cambiar a sólo audio</a>';
+								}
+								else {
+									echo '<a href="/live-audio/" class="audio-only"><i class="fa fa-headphones fa-1x"></i> Switch to Audio Only</a>';
+								}
 
-							if (is_page('envivo')) {
-								echo 'Programa/Horario';
-							}
-							else {
-								echo 'Schedule';
-							}
+							?>
+						</a>
+						 <i class="pipe">|</i> 
+						<?php
+								if (is_page('envivo')) {
+									echo '<a href="/live/" class="audio-only">Switch to English</a>';
+								}
+								else {
+									echo '<a href="/envivo/" class="audio-only">Cambiar a Spanish</a>';
+								}
 
-						?>
-						
-					</a>
+							?>
+						</a>
+
+
+
+							 
+					</nav>
 				</header><!-- .entry-header -->
 				
 				<div class="entry-content">
@@ -98,17 +126,18 @@ Use the tools on this page to share the news about this LIVE stream with your fr
 
 									?>
 							</div>
-							<p class="visible-xs text-center"><a href="/envivo/">Listen en Espa&ntilde;ol &rarr;</a></p>
+							<a class="btn btn-lg btn-full-width" href="/donate">Donate Today</a>
 						</div>
 						<div class="twitter-stream col-sm-4">
-							<a class="twitter-timeline" href="https://twitter.com/hashtag/truewoman14" data-widget-id="508999278061047808">#truewoman14 Tweets</a>
+							<a class="twitter-timeline" href="https://twitter.com/hashtag/revive15" data-widget-id="508999278061047808">#revive15 Tweets</a>
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 							</div>
-					</div>	
+					</div>
+					<p class="visible-xs text-center"><a href="/envivo/">Listen en Espa&ntilde;ol &rarr;</a></p>	
 					<div class="row">
 						<div class="col-sm-8">
 							<div class="chat">
-								<div style='display:none;'>Live Blog True Woman '14</div><div id='cil-root-f8d0d6b2ff' class='cil-root'><span class='cil-config-data' title='{"altcastCode":"f8d0d6b2ff","server":"www.coveritlive.com","geometry":{"width":"fit","height":650},"configuration":{"newEntryLocation":"bottom","commentLocation":"bottom","replayContentOrder":"chronological","pinsGrowSize":"on","titlePage":"off","skinOverride":"117"}}'>&nbsp;</span></div><script type='text/javascript'>window.cilAsyncInit = function() {cilEmbedManager.init()};(function() {if (window.cilVwRand === undefined) { window.cilVwRand = Math.floor(Math.random()*10000000); }var e = document.createElement('script');e.async = true;var domain = (document.location.protocol == 'http:' || document.location.protocol == 'file:') ? 'http://cdnsl.coveritlive.com' : 'https://cdnslssl.coveritlive.com';e.src = domain + '/vw.js?v=' + window.cilVwRand;e.id = 'cilScript-f8d0d6b2ff';document.getElementById('cil-root-f8d0d6b2ff').appendChild(e);}());</script>
+								<div style='display:none;'>Live Blog Revive &rsquo;15</div><div id='cil-root-f8d0d6b2ff' class='cil-root'><span class='cil-config-data' title='{"altcastCode":"f8d0d6b2ff","server":"www.coveritlive.com","geometry":{"width":"fit","height":650},"configuration":{"newEntryLocation":"bottom","commentLocation":"bottom","replayContentOrder":"chronological","pinsGrowSize":"on","titlePage":"off","skinOverride":"117"}}'>&nbsp;</span></div><script type='text/javascript'>window.cilAsyncInit = function() {cilEmbedManager.init()};(function() {if (window.cilVwRand === undefined) { window.cilVwRand = Math.floor(Math.random()*10000000); }var e = document.createElement('script');e.async = true;var domain = (document.location.protocol == 'http:' || document.location.protocol == 'file:') ? 'http://cdnsl.coveritlive.com' : 'https://cdnslssl.coveritlive.com';e.src = domain + '/vw.js?v=' + window.cilVwRand;e.id = 'cilScript-f8d0d6b2ff';document.getElementById('cil-root-f8d0d6b2ff').appendChild(e);}());</script>
 							</div>
 						</div>
 						<div class="col-sm-4">
@@ -127,6 +156,18 @@ Use the tools on this page to share the news about this LIVE stream with your fr
 
 						</div>
 					</div>
+					<p class="credit text-center">
+					<?php
+
+						if (is_page('envivo')) {
+							echo 'Transmisión EN VIVO provista por <a href="http://www.misionvirtual.org"><img style="width: 200px; height: auto;" src="http://www.misionvirtual.org/images/new_mv.png" alt="Mision Virtual" /></a>';
+						}
+						else {
+							echo 'LIVE stream provided by <a href="http://www.misionvirtual.org"><img style="width: 200px; height: auto;" src="http://www.misionvirtual.org/images/new_mv.png" alt="Mision Virtual" /></a>';
+						}
+
+					?>
+					</p>
 					<hr>
 					<h2><span class="section-title" id="schedule"></span> LIVE stream Schedule</h2>
 					<h3>Thursday, Oct. 9</h3>
