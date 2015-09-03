@@ -31,7 +31,7 @@ get_header('live'); ?>
 							?>
 							
 						</a>
-					
+						<i class="pipe">|</i> 
 						<?php
 								if (is_page('envivo')) {
 									echo '<a href="/audio-en-vivo/" class="audio-only"><i class="fa fa-headphones fa-1x"></i> Cambiar a sólo audio</a>';

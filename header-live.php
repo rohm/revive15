@@ -24,17 +24,6 @@
 <?php wp_head(); ?>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.plugin.min.js"></script> 
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.countdown.min.js"></script>
-<style>
-.page-header {
-	position: relative;
-}
-.schedule {
-	position: absolute;
-	right:0;
-	top: 50%;
-	margin-top: -20px;
-}
-</style>
 </head>
 
 <body id="live">
