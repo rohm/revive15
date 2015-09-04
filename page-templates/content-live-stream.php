@@ -134,9 +134,9 @@ Use the tools on this page to share the news about this LIVE stream with your fr
 							<a class="btn btn-lg btn-full-width" href="/donate">Donate Today</a>
 						</div>
 						<div class="twitter-stream col-sm-4">
-							<a class="twitter-timeline" href="https://twitter.com/hashtag/revive15" data-widget-id="508999278061047808">#revive15 Tweets</a>
-							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-							</div>
+							<a class="twitter-timeline" href="https://twitter.com/hashtag/revive15indy" data-widget-id="639833784079269888">#revive15indy Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</div>
 					</div>
 					<p class="visible-xs text-center"><a href="/envivo/">Listen en Espa&ntilde;ol &rarr;</a></p>	
 					<div class="row">
