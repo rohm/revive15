@@ -31,7 +31,7 @@ get_header('live'); ?>
 							?>
 							
 						</a>
-						<i class="pipe">|</i> 
+					
 						<?php
 								if (is_page('envivo')) {
 									echo '<a href="/audio-en-vivo/" class="audio-only"><i class="fa fa-headphones fa-1x"></i> Cambiar a sólo audio</a>';
@@ -42,19 +42,6 @@ get_header('live'); ?>
 
 							?>
 						</a>
-						 <i class="pipe">|</i> 
-						<?php
-								if (is_page('envivo')) {
-									echo '<a href="/live/" class="audio-only">Switch to English</a>';
-								}
-								else {
-									echo '<a href="/envivo/" class="audio-only">Cambiar a Spanish</a>';
-								}
-
-							?>
-						</a>
-
-
 
 							 
 					</nav>
@@ -67,10 +54,28 @@ get_header('live'); ?>
 					if ($_COOKIE['live-stream-form-complete']) {
 					
 						if (is_page('envivo')) {
-							print "<p>Thank you for registering for the Revive ’15 Live stream. The LIVE stream will begin at 2:00pm ET on Friday September 25.</p><p>We will email you with further LIVE stream updates as we get closer to Revive ’15.</p>";
+							print "<p>Gracias por registrarte en la transmisión EN VIVO de Revive '15. Estamos emocionados de que serás motivada, animada y equipada junto a las que estarán en Indianapolis. Recibirás anuncios y noticias en la medida que se acerca la fecha.</p>
+<p>
+Asegúrate de guardar este correo, es la información que necesitas para la transmisión EN VIVO de Revive '15.
+</p>
+							
+
+<h3>Días y Horario de la transmisión EN VIVO</h3>
+<ul>
+<li>Septiembre 25, 2:00–9:00 EDT</li>
+<li>Septiembre 26, 8:30–4:00 EDT</li>
+</ul>
+
+<h3>¿Qué hacer después?</h3>
+<p>
+Usa las herramientas en esta página para compartir la noticia acerca de la transmisión EN VIVO de Revive '15 con tus amigas.</p>";
 						} elseif (is_page('live')) {
 							print "
-<p>Thanks for signing up for the Revive '15 LIVE stream. We are so excited that will be joining us. We will send out further announcements and updates as the date gets closer.</p>
+<p>Thanks for signing up for the Revive '15 LIVE stream. We are so excited that you will be <strong>motivated</strong>, <strong>encouraged</strong>, and <strong>equipped</strong> along with everyone in Indianapolis.</p>
+<p>
+You will receive further announcements and updates as the date gets closer.
+</p>
+							
 
 <h3>LIVE Stream Dates and Times:</h3>
 <ul>
@@ -129,8 +134,9 @@ Use the tools on this page to share the news about this LIVE stream with your fr
 							<a class="btn btn-lg btn-full-width" href="/donate">Donate Today</a>
 						</div>
 						<div class="twitter-stream col-sm-4">
-							<a class="twitter-timeline" href="https://twitter.com/hashtag/revive15" data-widget-id="639497347576283136">#revive15 Tweets</a>
-							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>							</div>
+							<a class="twitter-timeline" href="https://twitter.com/hashtag/revive15" data-widget-id="508999278061047808">#revive15 Tweets</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							</div>
 					</div>
 					<p class="visible-xs text-center"><a href="/envivo/">Listen en Espa&ntilde;ol &rarr;</a></p>	
 					<div class="row">
@@ -159,57 +165,22 @@ Use the tools on this page to share the news about this LIVE stream with your fr
 					<?php
 
 						if (is_page('envivo')) {
-							echo 'Transmisión EN VIVO provista por <a href="http://www.misionvirtual.org"><img style="width: 200px; height: auto;" src="http://www.misionvirtual.org/images/new_mv.png" alt="Mision Virtual" /></a>';
+							echo 'Transmisión EN VIVO provista por <a href="http://www.misionvirtual.org"><img style="width: 200px; height: auto;" src="http://www.misionvirtual.org/images/new_mv.png" alt="Mision Virtual" /></a>
+							</p>
+							<hr>
+							';
+							echo PostSnippets::getSnippet("liveScheduleSpanish");
 						}
 						else {
-							echo 'LIVE stream provided by <a href="http://www.misionvirtual.org"><img style="width: 200px; height: auto;" src="http://www.misionvirtual.org/images/new_mv.png" alt="Mision Virtual" /></a>';
+							echo 'LIVE stream provided by <a href="http://www.misionvirtual.org"><img style="width: 200px; height: auto;" src="http://www.misionvirtual.org/images/new_mv.png" alt="Mision Virtual" /></a>
+							</p>
+							<hr>
+							';
+							echo PostSnippets::getSnippet("liveScheduleEnglish");
 						}
 
+					
 					?>
-					</p>
-					<hr>
-					<h2><span class="section-title" id="schedule"></span> LIVE stream Schedule</h2>
-					<h3>Thursday, Oct. 9</h3>
-					<table class="table table-schedule table-bordered">
-						<tbody>
-							<tr class="">
-								<td class="column-time">6:45 – 9:45 p.m.</td>
-								<td class="column-session">Evening Session with Joni Eareckson Tada and Nancy Leigh DeMoss</td>
-							</tr>
-						</tbody>
-					</table>
-					<h3>Friday, Oct. 10</h3>
-					<table class="table table-schedule table-bordered">
-						<tbody>
-							<tr class="">
-								<td class="column-time">8:30 – 11:45 a.m.</td>
-								<td class="column-session">Morning Session with Mary Kassian and Janet Parshall</td>
-							</tr>
-							<tr>
-								<td class="column-time">1:30 – 2:30 p.m.</td>
-								<td class="column-session">Breakout Session with Joni Tada (Hymn Sing)</td>
-
-							</tr>
-							<tr class="">
-								<td class="column-time">3:00 – 4:00 p.m.</td>
-								<td class="column-session">Breakout Session with Janet Parshall</td>
-							</tr>
-							<tr class="">
-								<td class="column-time">6:45 – 9:45 p.m.</td>
-								<td class="column-session">Evening Session with Chrissy Toledo and Jim Cymbala</td>
-							</tr>
-						</tbody>
-					</table>
-					<h3>Saturday, Oct. 11</h3>
-					<table class="table table-schedule table-bordered">
-						<tbody>
-							<tr class="">
-								<td class="column-time">8:45 a.m. – 12:00 p.m.</td>
-								<td class="column-session">Morning Session with Nancy Leigh DeMoss</td>
-							</tr>
-						</tbody>
-					</table>
-										
 					
 					
 					<?php endwhile; // end of the loop. ?>
