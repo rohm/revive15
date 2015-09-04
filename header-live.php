@@ -26,7 +26,7 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.countdown.min.js"></script>
 </head>
 
-<body id="live">
+<body id="live" <?php body_class(); ?>>
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54c711a64ebf6b10" async="async"></script>
 

@@ -1090,6 +1090,7 @@ header.page-header {
 #adslice {
 	background-color: darken(@brand-secondary, 8%);
 	text-align: center;
+	min-height: 46px;
 	.adslice-text {
 		margin: 0 20px -20px 0;
 		position: relative;
@@ -1099,6 +1100,13 @@ header.page-header {
 		color: #fff;
 		color: @brand-primary;
 		display: inline-block;
+	}
+	a {
+		.transition(all .3s);
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		}
 	}
 	.is-countdown {
 		border:none;
