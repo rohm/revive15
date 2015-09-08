@@ -18,8 +18,7 @@ get_header('live'); ?>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 					<nav>
 						<a class="schedule" href="#schedule">
-							<i class="fa fa-list"></i> 
-							<?php
+							<i class="fa fa-list"></i><?php
 
 								if (is_page('envivo')) {
 									echo 'Programa/Horario';
@@ -28,20 +27,21 @@ get_header('live'); ?>
 									echo 'Schedule';
 								}
 
-							?>
-							
-						</a>
+							?></a>
 					
 						<?php
+						/* comment out until stream set live
+						
 								if (is_page('envivo')) {
 									echo '<a href="/audio-en-vivo/" class="audio-only"><i class="fa fa-headphones fa-1x"></i> Cambiar a sólo audio</a>';
 								}
 								else {
 									echo '<a href="/live-audio/" class="audio-only"><i class="fa fa-headphones fa-1x"></i> Switch to Audio Only</a>';
 								}
+						*/
 
 							?>
-						</a>
+						
 
 							 
 					</nav>
@@ -68,7 +68,7 @@ Asegúrate de guardar este correo, es la información que necesitas para la tran
 
 <h3>¿Qué hacer después?</h3>
 <p>
-Usa las herramientas en esta página para compartir la noticia acerca de la transmisión EN VIVO de Revive '15 con tus amigas.</p>";
+Usa las herramientas en la parte izquierda de esta página para compartir la noticia acerca de la transmisión EN VIVO de Revive '15 con tus amigas.</p>";
 						} elseif (is_page('live')) {
 							print "
 <p>Thanks for signing up for the Revive '15 LIVE stream. We are so excited that you will be <strong>motivated</strong>, <strong>encouraged</strong>, and <strong>equipped</strong> along with everyone in Indianapolis.</p>
@@ -85,7 +85,7 @@ You will receive further announcements and updates as the date gets closer.
 
 <h3>What to do Next:</h3>
 <p>
-Use the tools on this page to share the news about this LIVE stream with your friends.</p>";
+Use the tools on the left side of this page to share the news about this LIVE stream with your friends.</p>";
 						} else {
 							print "Error: We have a cookie but no page set.";
 						}
@@ -101,22 +101,14 @@ Use the tools on this page to share the news about this LIVE stream with your fr
 						}	
 						
 					}
-						
-						
-					/*
-						if ($_COOKIE['form-1-complete'] == 1 && (is_page('live'))) {
-								include ('library/inc/_live.php');
-							} elseif ($_COOKIE['form-1-complete'] == 1 && (is_page('envivo'))) {
-									include ('library/inc/_envivo.php');
-							} elseif ( is_page('envivo')) {
-									gravity_form(2, true, true, false, '', true, 12);
-							} else {
-							 		gravity_form(1, true, true, false, '', true, 12);
-						}
-					*/
-						
+					
+					
+					/* 
+					
+					comment out live stream experience code until we go live 	
+					
+					
 					?>
-
 					<div class="row">
 						<div class="col-sm-8">
 							<div class="embed-responsive embed-responsive-16by9">
@@ -161,18 +153,26 @@ Use the tools on this page to share the news about this LIVE stream with your fr
 
 						</div>
 					</div>
+					
+					*/ ?>
+					
+					
+					<!-- schedule -->
 					<p class="credit text-center">
 					<?php
 
 						if (is_page('envivo')) {
-							echo 'Transmisión EN VIVO provista por <a href="http://www.misionvirtual.org"><img style="width: 200px; height: auto;" src="http://www.misionvirtual.org/images/new_mv.png" alt="Mision Virtual" /></a>
+							
+							//echo 'Transmisión EN VIVO provista por <a href="http://www.misionvirtual.org"><img style="width: 200px; height: auto;" src="http://www.misionvirtual.org/images/new_mv.png" alt="Mision Virtual" /></a>
+							echo '
 							</p>
 							<hr>
 							';
 							echo PostSnippets::getSnippet("liveScheduleSpanish");
 						}
 						else {
-							echo 'LIVE stream provided by <a href="http://www.misionvirtual.org"><img style="width: 200px; height: auto;" src="http://www.misionvirtual.org/images/new_mv.png" alt="Mision Virtual" /></a>
+							//echo 'LIVE stream provided by <a href="http://www.misionvirtual.org"><img style="width: 200px; height: auto;" src="http://www.misionvirtual.org/images/new_mv.png" alt="Mision Virtual" /></a>
+							echo '
 							</p>
 							<hr>
 							';
