@@ -17,19 +17,14 @@ get_header('live'); ?>
 				<header class="entry-header page-header">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 					<nav>
-						<a class="schedule" href="#schedule">
-							<i class="fa fa-list"></i><?php
+						
+							<?php
 
-								if (is_page('envivo')) {
-									echo 'Programa/Horario';
-								}
-								else {
-									echo 'Schedule';
-								}
+						echo '<a class="schedule" href="#schedule"><i class="fa fa-list"></i> ', (is_page('envivo') ? 'Programa/Horario' : 'Schedule'), '</a>';
+						echo ' | ';
+						echo '<a href="', (is_page('envivo') ? '/live/' : '/envivo/') ,'"><i class="fa fa-globe"></i> ', (is_page('envivo') ? 'English' : 'Español'), '</a>';
+						
 
-							?></a>
-					
-						<?php
 						/* comment out until stream set live
 						
 								if (is_page('envivo')) {
