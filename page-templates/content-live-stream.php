@@ -49,38 +49,9 @@ get_header('live'); ?>
 					if ($_COOKIE['live-stream-form-complete']) {
 					
 						if (is_page('envivo')) {
-							print "<p>Gracias por registrarte en la transmisión EN VIVO de Revive '15. Estamos emocionados de que serás motivada, animada y equipada junto a las que estarán en Indianapolis. Recibirás anuncios y noticias en la medida que se acerca la fecha.</p>
-<p>
-Asegúrate de guardar este correo, es la información que necesitas para la transmisión EN VIVO de Revive '15.
-</p>
-							
-
-<h3>Días y Horario de la transmisión EN VIVO</h3>
-<ul>
-<li>Septiembre 25, 2:00–9:00 EDT</li>
-<li>Septiembre 26, 8:30–4:00 EDT</li>
-</ul>
-
-<h3>¿Qué hacer después?</h3>
-<p>
-Usa las herramientas en la parte izquierda de esta página para compartir la noticia acerca de la transmisión EN VIVO de Revive '15 con tus amigas.</p>";
+							include 'spanish-ux.include.php';
 						} elseif (is_page('live')) {
-							print "
-<p>Thanks for signing up for the Revive '15 LIVE stream. We are so excited that you will be <strong>motivated</strong>, <strong>encouraged</strong>, and <strong>equipped</strong> along with everyone in Indianapolis.</p>
-<p>
-You will receive further announcements and updates as the date gets closer.
-</p>
-							
-
-<h3>LIVE Stream Dates and Times:</h3>
-<ul>
-<li>September 25, 2:00-9:00 EDT</li>
-<li>September 26, 8:30-4:00 EDT</li>
-</ul>
-
-<h3>What to do Next:</h3>
-<p>
-Use the tools on the left side of this page to share the news about this LIVE stream with your friends.</p>";
+							include 'english-ux.include.php';
 						} else {
 							print "Error: We have a cookie but no page set.";
 						}
@@ -97,59 +68,8 @@ Use the tools on the left side of this page to share the news about this LIVE st
 						
 					}
 					
-					
-					/* 
-					
-					comment out live stream experience code until we go live 	
-					
-					
 					?>
-					<div class="row">
-						<div class="col-sm-8">
-							<div class="embed-responsive embed-responsive-16by9">
-								<?php
-
-										if (is_page('live')) {
-											echo '<iframe src="http://new.livestream.com/accounts/10185548/events/3472918/player?width=640&height=360&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no"> </iframe>';
-										}
-										elseif (is_page('live-2')) {
-											echo '<iframe width="640" height="360" src="//www.youtube.com/embed/7nW6Xjd5Djw" frameborder="0" allowfullscreen></iframe>';
-										}
-
-									?>
-							</div>
-							<a class="btn btn-lg btn-full-width" href="/donate">Donate Today</a>
-						</div>
-						<div class="twitter-stream col-sm-4">
-							<a class="twitter-timeline" href="https://twitter.com/hashtag/revive15indy" data-widget-id="639833784079269888">#revive15indy Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-						</div>
-					</div>
-					<p class="visible-xs text-center"><a href="/envivo/">Listen en Espa&ntilde;ol &rarr;</a></p>	
-					<div class="row">
-						<div class="col-sm-8">
-							<div class="chat">
-								<div style='display:none;'>Live Blog Revive &rsquo;15</div><div id='cil-root-f8d0d6b2ff' class='cil-root'><span class='cil-config-data' title='{"altcastCode":"f8d0d6b2ff","server":"www.coveritlive.com","geometry":{"width":"fit","height":650},"configuration":{"newEntryLocation":"bottom","commentLocation":"bottom","replayContentOrder":"chronological","pinsGrowSize":"on","titlePage":"off","skinOverride":"117"}}'>&nbsp;</span></div><script type='text/javascript'>window.cilAsyncInit = function() {cilEmbedManager.init()};(function() {if (window.cilVwRand === undefined) { window.cilVwRand = Math.floor(Math.random()*10000000); }var e = document.createElement('script');e.async = true;var domain = (document.location.protocol == 'http:' || document.location.protocol == 'file:') ? 'http://cdnsl.coveritlive.com' : 'https://cdnslssl.coveritlive.com';e.src = domain + '/vw.js?v=' + window.cilVwRand;e.id = 'cilScript-f8d0d6b2ff';document.getElementById('cil-root-f8d0d6b2ff').appendChild(e);}());</script>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="10000">
-					      <div class="carousel-inner">
-									<?php $mySnippet = PostSnippets::getSnippet("liveSidebarAds");
-					echo $mySnippet; ?>
-					      </div>
-								<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-									<span class="fa fa-chevron-left"></span>
-								</a>
-								<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-									<span class="fa fa-chevron-right"></span>
-								</a>
-					    </div>
-
-						</div>
-					</div>
-					
-					*/ ?>
+				
 					
 					
 					<!-- schedule -->
